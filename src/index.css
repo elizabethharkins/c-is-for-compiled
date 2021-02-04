@@ -1,0 +1,135 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+:root {
+	--light-pastel-purple:#b19cd9;
+	--blue-magenta:#9921e8;
+	--accent-gradient:linear-gradient(315deg, #9921e8 0%, #5f72be 74%);
+	--white:#fff;
+	--fill-area-bg-color:#000;		/* #333838; */
+	--main-area-bg-color:linear-gradient(to right, #ff5c5c, #ffa860, #e3dc44, #57b02a);
+}
+
+/* ---------- general ---------- */
+* {
+  	margin: 0;
+  	padding: 0;
+  	box-sizing: border-box;
+}
+
+body {
+	color: var(--white);
+	background: var(--fill-area-bg-color);
+	/*font-family: 'Droid Serif', serif;*/
+	/*font-family: 'Roboto', sans-serif;*/
+	font-family: 'PT Serif', serif;
+	font-size: 1em;
+	margin: 0;
+}
+
+.page {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-flow: column;
+	width: 100%;
+}
+
+/* ---------- @media ---------- */
+@media screen and (max-width: 52em) {
+	.navbar {
+		height: 60px;
+	}
+	.nav-links {
+		font-size: 4vw;
+	}
+
+	p.content {
+		height: 100px;
+		width: 80%;
+	}
+
+	label {
+		font: 5rem "Monoton", sans-serif;
+		margin: -2rem 0 1rem;
+	}
+	.slider {
+		width: 85vw;
+	}
+}
+
+@media screen and (max-width: 33.250em) {
+	p.content {
+		margin: -6em auto 0 auto;
+	}
+	.slidecontainer {
+		margin: 3vh auto;
+	}
+
+	label {
+		margin: 1rem 0 2rem;
+	}
+
+	.slider::-webkit-slider-thumb {
+		width: 8vw;
+		height: 8vw;
+	}
+}
+
+@media screen and (min-width: 52em) {
+	.navbar {
+  		display: flex;
+  		justify-content: space-between;
+  		padding-bottom: 0;
+  		align-items: center;
+	}
+	.navbar-toggle {
+  		display: none;
+	}
+
+	.contact {
+		font-size: 1.375em;
+	}
+
+	.main-nav {
+		border: none;
+  		display: flex;
+  		margin-right: 30px;
+  		flex-direction: row;
+  		justify-content: flex-end;
+
+	  	top: 5px;
+	  	top: 37%;
+	  	width: 100%;
+	}
+	.main-nav li {
+  		margin: 0;
+  		transition: all .6s ease;
+	}
+	.main-nav li:hover,
+	.main-nav li:active {
+		background: rgba(255,255,255, 0.1);
+		border-image-source: none;
+	}
+	
+	.contact:hover,
+	.nav-links:hover {
+  		color: rgba(255, 255, 255, 1);
+	  	border-bottom: none;
+	}
+	.main-nav li:hover {
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	}
+
+	.nav-links {
+  		margin-left: 20px;
+	}
+}
+
+
+
+
+
