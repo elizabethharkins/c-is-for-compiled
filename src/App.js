@@ -11,19 +11,19 @@ import { TheCollection } from "./thecollection/TheCollection";
 
 function App() {
 
-    return (
-        <React.Fragment>
-            <Router>
-                <NavigationBar />
+	return (
+		<React.Fragment>
+			<Router>
+				<NavigationBar />
 
-                <Switch>
-                    <Route exact path="/" component={ Home } />
-                    <Route path="/about" component={ About } />
-                    <Route path="/thecollection" component={ TheCollection } />
-                </Switch>
-            </Router>
-        </React.Fragment>
-    );
+				<Switch>
+					<Route exact path="/" component={ Home } />
+					<Route path="/about" component={ About } />
+					<Route path="/thecollection" component={ TheCollection } />
+				</Switch>
+			</Router>
+		</React.Fragment>
+	);
 
 }
 
