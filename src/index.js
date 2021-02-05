@@ -2,13 +2,12 @@
 
 import React from "react";
 import ReactDOM from "react-dom";
-import CoverStory from "./CoverStory";
 import "./index.css";
+import App from "./App";
 
-ReactDOM.render(
-    <CoverStory />,
-    document.getElementById("root")
-);
+
+ReactDOM.render(<App />, document.getElementById("root"));
+
 
 
 

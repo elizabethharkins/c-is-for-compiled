@@ -31,8 +31,8 @@ main {
 	background: var(--main-area-bg-color);
 }
 
-p.content {
-	color: rgba(255, 255, 255, 0.9);
+.content {
+	color: #eaedf0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -43,6 +43,9 @@ p.content {
 	width: 45%;
 	z-index: 99999;
 	text-align: center;
+
+	/*color: rgba(255, 255, 255, 0.7);
+    text-shadow: #222 1px 0 8px;*/
 }
 
 .slidecontainer {
@@ -104,6 +107,82 @@ label::after {
   	box-shadow: 5px 5px 8px -1px #000;
   	transition: box-shadow .3s ease-in-out;
 }
+
+/* ---------- @media ---------- */
+@media screen and (max-width: 52em) {
+	p.content {
+		height: 100px;
+		width: 80%;
+	}
+
+	label {
+		font: 5rem "Monoton", sans-serif;
+		margin: -2rem 0 1rem;
+	}
+	.slider {
+		width: 85vw;
+	}
+}
+
+@media screen and (max-width: 33.250em) {
+	p.content {
+		margin: -6em auto 0 auto;
+	}
+	.slidecontainer {
+		margin: 3vh auto;
+	}
+
+	label {
+		margin: 1rem 0 2rem;
+	}
+
+	.slider::-webkit-slider-thumb {
+		width: 8vw;
+		height: 8vw;
+	}
+}
+
+@media screen and (min-width: 52em) {
+	.main-nav {
+		border: none;
+  		display: flex;
+  		margin-right: 30px;
+  		flex-direction: row;
+  		justify-content: flex-end;
+
+	  	top: 5px;
+	  	top: 37%;
+	  	width: 100%;
+	}
+	.main-nav li {
+  		margin: 0;
+  		transition: all .6s ease;
+	}
+	.main-nav li:hover,
+	.main-nav li:active {
+		background: rgba(255,255,255, 0.1);
+		border-image-source: none;
+	}
+	
+	.contact:hover,
+	.nav-links:hover {
+  		color: rgba(255, 255, 255, 1);
+	  	border-bottom: none;
+	}
+	.main-nav li:hover {
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	}
+
+	.nav-links {
+  		margin-left: 20px;
+	}
+}
+
+
+
+
+
+
 
 
 
