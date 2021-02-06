@@ -189,7 +189,7 @@
 
 }
 
-@media only screen and (min-width: 240px) and (max-width: 51em) {
+@media only screen and (max-width: 64em) {
 	.magazine {
 		grid-template-rows: 120px 4fr 3fr 3fr 2fr 0.5fr;/*130px 2fr 1fr*/
 		grid-template-columns: 95vw; /*1.5fr 1fr 1fr 1.5fr*/
