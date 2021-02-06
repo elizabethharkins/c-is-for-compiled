@@ -17,7 +17,7 @@ export const About = () => {
 			</div>
 
 			<div className="content2">
-				<p>It's the little things ... GT Cinetype, Sublime Text, baker, people person, Art Deco, mint-chip gelato, travel, guitar, art direction, sewing, Bowie, retro, record-collecting, South of the James Market, Sub Rosa Bakery, daily learning, I love JavaScript
+				<p>It's the little things ... GT Cinetype, Sublime Text, baker, people person, Art Deco, mint-chip gelato, travel, art direction, sewing, Bowie, retro, record-collecting, South of the James Market, Sub Rosa Bakery, JavaScripting
 				</p>
 			</div>
 

@@ -96,7 +96,6 @@
 	font-family: 'Josefin Sans', sans-serif;
 	grid-row: 2 / 4;
 	grid-column: 1 / 2;
-	background-image: radial-gradient(at top right #00ff00, gray);
 	text-align: left;
 	z-index: 2;
 
@@ -135,6 +134,7 @@
 .content2 p {
 	background: #fff;
 	color: var(--dark-grey);
+	padding: 0.5%;
 }
 
 /* ---------- @collection ---------- */
@@ -209,7 +209,6 @@
 		margin: 0;
 	}
 
-	/* ---------- quote ---------- */
 	.quote {
 		bottom: 11%;
 		font-size: calc(12px + 2.3vw);
@@ -219,10 +218,19 @@
 		width: 66%;
 	}
 
+	.content1 h1, 
+	.content1 p,
+	.content2 p {
+		padding: 2%;
+	}
+
 	.content1 {
 		grid-row: 3;
 		grid-column: 1;
 		padding-top: 50px;
+	}
+	.content1 h1 {
+		margin-bottom: 1em;
 	}
 
 	.content2 {
