@@ -189,7 +189,7 @@
 
 }
 
-@media only screen and (max-width: 64em) {
+@media only screen and (max-width: 65.625em) {
 	.magazine {
 		grid-template-rows: 120px 4fr 3fr 3fr 2fr 0.5fr;/*130px 2fr 1fr*/
 		grid-template-columns: 95vw; /*1.5fr 1fr 1fr 1.5fr*/
@@ -250,14 +250,13 @@
 		grid-column: 1;
 		margin: 0;
 		padding: 0;
-
+		margin-top: -10em;
 		z-index: 2;
 	}
 
 	.invite {
-		background: var(--grey);
-		border-bottom: 1px solid var(--dark-grey);
-		border-right: 5px solid var(--dark-grey);
+		padding-bottom: 0.125%;
+		padding-right: 25px;
 
 		color: var(--dark-accent-grey);
 		display: flex;
