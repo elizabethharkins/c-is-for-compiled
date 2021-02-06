@@ -11,6 +11,7 @@ const NavStyles = styled.div`
 		background-image: var(--accent-gradient);
 		border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 		border-bottom: 1px solid var(--light-pastel-purple);
+		padding: 0.25rem 1rem 0.25rem 1rem;
 		position: fixed;
     	top: 0;
 		width: 100vw;
