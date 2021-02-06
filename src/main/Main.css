@@ -19,6 +19,7 @@ main {
     width: 100%;
     height: 100%;
     transition: all 1s ease; 
+    z-index: 2;
 }
 
 main {
@@ -29,6 +30,7 @@ main {
 	width: 100vw;
 	height: 100vh;
 	background: var(--main-area-bg-color);
+	margin-top: 60px;
 }
 
 .content {
@@ -41,7 +43,7 @@ main {
 	margin: 0 auto;
 	height: 200px;
 	width: 45%;
-	z-index: 99999;
+	z-index: 2;
 	text-align: center;
 
 	/*color: rgba(255, 255, 255, 0.7);
@@ -55,6 +57,7 @@ main {
 	flex-flow: column;
 	margin: 10vh auto;
 	width: 80%;
+	z-index: 2;
 }
 
 label {
@@ -70,7 +73,6 @@ label::after {
 
 /* slider itself */
 .slider {
-  	opacity: 0.7; 
   	position: static;
 	z-index: 2;
 	width: 50vw;
@@ -90,7 +92,6 @@ label::after {
   	appearance: none;
   	width: 4vw;
   	height: 4vw;
-  	/*background: #eee;*/
   	background: #eaedf0;
   	border-radius: 50%;
   	cursor: pointer;
@@ -111,13 +112,13 @@ label::after {
 
 /* ---------- @media ---------- */
 @media screen and (max-width: 52em) {
-	p.content {
+	.content {
 		height: 100px;
-		width: 80%;
+		width: 85%;
 	}
 
 	label {
-		font: 5rem "Monoton", sans-serif;
+		font: 4rem "Monoton", sans-serif;
 		margin: -2rem 0 1rem;
 	}
 	.slider {
@@ -126,15 +127,15 @@ label::after {
 }
 
 @media screen and (max-width: 33.250em) {
-	p.content {
-		margin: -6em auto 0 auto;
+	.content {
+		margin: -5em auto 0 auto;
 	}
 	.slidecontainer {
 		margin: 3vh auto;
 	}
 
 	label {
-		margin: 1rem 0 2rem;
+		margin: 2rem 0 2rem;
 	}
 
 	.slider::-webkit-slider-thumb {
@@ -143,41 +144,7 @@ label::after {
 	}
 }
 
-@media screen and (min-width: 52em) {
-	.main-nav {
-		border: none;
-  		display: flex;
-  		margin-right: 30px;
-  		flex-direction: row;
-  		justify-content: flex-end;
-
-	  	top: 5px;
-	  	top: 37%;
-	  	width: 100%;
-	}
-	.main-nav li {
-  		margin: 0;
-  		transition: all .6s ease;
-	}
-	.main-nav li:hover,
-	.main-nav li:active {
-		background: rgba(255,255,255, 0.1);
-		border-image-source: none;
-	}
-	
-	.contact:hover,
-	.nav-links:hover {
-  		color: rgba(255, 255, 255, 1);
-	  	border-bottom: none;
-	}
-	.main-nav li:hover {
-		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-	}
-
-	.nav-links {
-  		margin-left: 20px;
-	}
-}
+@media screen and (min-width: 52em) {}
 
 
 

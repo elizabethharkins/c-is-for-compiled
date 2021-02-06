@@ -46,7 +46,7 @@ class Main extends React.Component {
 		const { rangeValues, currentRangeValue, currentStoryValue } = this.state;
 
 		return (
-			<div className="page">
+			<div className="page thecontent">
 			    <div className="effects-container">
 			      	<div className="fill-area"></div>
 		        	<main>

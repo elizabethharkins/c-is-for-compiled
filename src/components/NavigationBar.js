@@ -11,16 +11,19 @@ const NavStyles = styled.div`
 		background-image: var(--accent-gradient);
 		border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 		border-bottom: 1px solid var(--light-pastel-purple);
+		position: fixed;
+    	top: 0;
 		width: 100vw;
+		z-index: 4;
 	}
 	a, .navbar-nav, .navbar-light .nav-link {
-		color: #eaedf0;
+		color: var(--light-accent-blue);
 		&:hover { color: white; }
 	}
 	.navbar-brand {
 		font-size: 1.4em;
 		z-index: 9999;
-		color: #eaedf0;
+		color: var(--light-accent-blue);
 		cursor: pointer;
 		text-decoration: underline;
 		&:hover { color: white; }
@@ -29,7 +32,7 @@ const NavStyles = styled.div`
 		padding: 0.125em;
 	}
 	.navbar-light .navbar-toggler-icon {
-		background-image: linear-gradient(180deg, var(--blue-magenta), #eaedf0, var(--blue-magenta), #eaedf0, var(--blue-magenta), #eaedf0, var(--blue-magenta), #eaedf0, var(--blue-magenta), #eaedf0, var(--blue-magenta));
+		background-image: linear-gradient(180deg, var(--blue-magenta), var(--light-accent-blue), var(--blue-magenta), var(--light-accent-blue), var(--blue-magenta), var(--light-accent-blue), var(--blue-magenta), var(--light-accent-blue), var(--blue-magenta), var(--light-accent-blue), var(--blue-magenta));
 	}
 	.navbar-nav {
 		margin-top: 1em;
@@ -39,7 +42,7 @@ const NavStyles = styled.div`
 		text-align: center;
 		background: rgba(255,255,255, 0.1);
 		transition: all .6s ease;
-		border-bottom: 1px solid #eaedf0;
+		border-bottom: 1px solid var(--light-accent-blue);
 		&:hover { box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
 	}
 	.nav-link.active {
