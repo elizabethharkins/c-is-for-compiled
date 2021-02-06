@@ -9,6 +9,6 @@ const Wrapper = styled.div`
 
 export const TheCollection = () => (
 	<Wrapper>
-    	<h2>The Collection</h2>
+    	<h2></h2>
   	</Wrapper>
 );

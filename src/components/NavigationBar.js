@@ -29,7 +29,7 @@ const NavStyles = styled.div`
 		padding: 0.125em;
 	}
 	.navbar-light .navbar-toggler-icon {
-		background-image: linear-gradient(45deg, var(--blue-magenta), #eaedf0, var(--blue-magenta), #eaedf0, var(--blue-magenta), #eaedf0, var(--blue-magenta), #eaedf0, var(--blue-magenta));
+		background-image: linear-gradient(180deg, var(--blue-magenta), #eaedf0, var(--blue-magenta), #eaedf0, var(--blue-magenta), #eaedf0, var(--blue-magenta), #eaedf0, var(--blue-magenta), #eaedf0, var(--blue-magenta));
 	}
 	.navbar-nav {
 		margin-top: 1em;
@@ -38,9 +38,12 @@ const NavStyles = styled.div`
 	.nav-item {
 		text-align: center;
 		background: rgba(255,255,255, 0.1);
-		border-radius: 0.125em;
 		transition: all .6s ease;
+		border-bottom: 1px solid #eaedf0;
 		&:hover { box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+	}
+	.nav-link.active {
+		color: unset !important;
 	}
 `;
 
@@ -48,11 +51,14 @@ const NavStyles = styled.div`
 export const NavigationBar = () => (
 	<NavStyles>
 		<Navbar expand="lg">
-			<Navbar.Brand href="mailto:eliz@betsthewebdev.com?Subject=Hi, Liz!" target="_top" rel="noreferrer">Elizabeth Harkins</Navbar.Brand>
+			<Navbar.Brand href="/">Elizabeth Harkins</Navbar.Brand>
 			<Navbar.Toggle aria-controls="basic-navbar-nav"/>
 			<Navbar.Collapse id="basic-navbar-nav">
 				<Nav className="ml-auto">
-					<Nav.Item><Nav.Link href="/">Home</Nav.Link></Nav.Item> 
+					{/* <Nav.Item><Nav.Link href="/">Home</Nav.Link></Nav.Item> */}
+					<Nav.Item><Nav.Link href="https://www.linkedin.com/in/emharkins/" target="_blank">in</Nav.Link></Nav.Item>
+					<Nav.Item><Nav.Link href="https://twitter.com/_lizzith" target="_blank">chirp</Nav.Link></Nav.Item>
+					<Nav.Item><Nav.Link href="https://github.com/elizabethharkins" target="_blank">hub</Nav.Link></Nav.Item>
 					<Nav.Item><Nav.Link href="/about">About</Nav.Link></Nav.Item>
 					<Nav.Item><Nav.Link href="/thecollection">The Collection</Nav.Link></Nav.Item>
 				</Nav>

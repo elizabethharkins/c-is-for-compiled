@@ -90,7 +90,8 @@ label::after {
   	appearance: none;
   	width: 4vw;
   	height: 4vw;
-  	background: #eee;
+  	/*background: #eee;*/
+  	background: #eaedf0;
   	border-radius: 50%;
   	cursor: pointer;
   	box-shadow: 5px 5px 8px -1px #000;
@@ -101,7 +102,7 @@ label::after {
   	appearance: none;
   	width: 4vw;
   	height: 4vw;
-  	background: #eee;
+  	background: #eaedf0;
   	border-radius: 50%;
   	cursor: pointer;
   	box-shadow: 5px 5px 8px -1px #000;
