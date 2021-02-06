@@ -34,25 +34,14 @@ html {
 }
 
 body {
-	/*font-family: 'PT Serif', serif;*/
-	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-	font-size: 1em;
-	margin: 0;
-
 	background: var(--grey) !important;
 	color: var(--dark-grey);
-	/*display: flex;
-	justify-content: center;
-	align-items: center;*/
-	/*font-family: 'PT Serif', serif;*/
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	font-size: 1em;
 	line-height: 1.3;
+	margin: 0;
 }
 
-@media screen and (max-width: 52em) {}
-
-@media screen and (max-width: 33.250em) {}
-
-@media screen and (min-width: 52em) {}
 
 
 

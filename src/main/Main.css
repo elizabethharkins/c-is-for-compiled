@@ -1,13 +1,7 @@
 
 
-/* ---------- main-content ---------- */
-main {
-	width: 100%;
-}
-
 .fill-area  {
 	bottom: -72px;
-	z-index: 0;
 	background: var(--fill-area-bg-color);
 	box-shadow: inset 3px 3px 5px -1px #111;
 	pointer-events: none;
@@ -34,7 +28,7 @@ main {
 }
 
 .content {
-	color: #eaedf0;
+	color: var(--light-accent-blue);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -45,9 +39,6 @@ main {
 	width: 45%;
 	z-index: 2;
 	text-align: center;
-
-	/*color: rgba(255, 255, 255, 0.7);
-    text-shadow: #222 1px 0 8px;*/
 }
 
 .slidecontainer {
@@ -92,7 +83,7 @@ label::after {
   	appearance: none;
   	width: 4vw;
   	height: 4vw;
-  	background: #eaedf0;
+  	background: var(--light-accent-blue);
   	border-radius: 50%;
   	cursor: pointer;
   	box-shadow: 5px 5px 8px -1px #000;
@@ -103,7 +94,7 @@ label::after {
   	appearance: none;
   	width: 4vw;
   	height: 4vw;
-  	background: #eaedf0;
+  	background: var(--light-accent-blue);
   	border-radius: 50%;
   	cursor: pointer;
   	box-shadow: 5px 5px 8px -1px #000;
@@ -144,7 +135,6 @@ label::after {
 	}
 }
 
-@media screen and (min-width: 52em) {}
 
 
 

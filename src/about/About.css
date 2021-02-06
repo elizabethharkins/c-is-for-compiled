@@ -13,18 +13,6 @@
 	margin: 140px auto auto auto;
 }
 
-.back-arrow {
-	position: absolute;
-	color: #a9a9a9;
-	z-index: 9999;
-	padding: 1em;
-	font-size: 1em;
-	text-decoration: none;
-}
-.back-arrow:hover {
-	color: var(--med-light-yellow);
-}
-
 /* ---------- title ---------- */
 .title {
 	align-items: end;
@@ -94,7 +82,6 @@
 .content1 {
 	box-shadow: var(--content-box-shadow);
 	display: block;
-	font-family: 'Josefin Sans', sans-serif;
 	grid-row: 2 / 4;
 	grid-column: 1 / 2;
 	text-align: left;
@@ -109,7 +96,6 @@
 	align-items: end;
 	box-shadow: var(--content-box-shadow);
 	display: grid;
-	font-family: 'Josefin Sans', sans-serif;
 	grid-row: 3 / 4;
 	grid-column: 2 / 5;
 	grid-template-columns: 1fr 1fr;
