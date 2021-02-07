@@ -24,7 +24,6 @@ main {
 	width: 100vw;
 	height: 100vh;
 	background: var(--main-area-bg-color);
-	margin-top: 50px;
 }
 
 .content {
@@ -39,6 +38,7 @@ main {
 	width: 45%;
 	z-index: 2;
 	text-align: center;
+	margin-top: 50px;
 }
 
 .slidecontainer {

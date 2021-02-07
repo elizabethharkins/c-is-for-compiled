@@ -23,9 +23,9 @@ export const About = () => {
 
 			<div className="quote" data-type data-type-min="100" data-type-max="300" data-text="A ship in harbor is safe - but that is not what ships are built for.">A ship in harbor is safe - but that is not what ships are built for.</div>
 
-			<div className="image"></div>
+			<div className="sunimage"></div>
 			<div className="drawing"></div>
-			<a href="mailto:eliz@betsthewebdev.com?Subject=Hi, Liz!" target="_top" className="invite emph">
+			<a href="mailto:eliz@betsthewebdev.com?Subject=Hi, Liz!" target="_top" className="invite aboutemph">
 				Electronic mail me!
     		</a>
 		</div>

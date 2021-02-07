@@ -34,7 +34,7 @@
 }
 
 /* ---------- images ---------- */
-.image {
+.sunimage {
 	background-image: url(./img/synthwave.jpg);
 	background-position: left center;
 	background-repeat: no-repeat;
@@ -154,7 +154,7 @@
 	transition: .7s;
 }
 
-.emph {
+.aboutemph {
 	transform: scaleY(1.5);
 	white-space: wrap;
 }
@@ -190,7 +190,7 @@
 		z-index: 3;
 	}
 
-	.image {
+	.sunimage {
 		background-size: auto;
 		grid-row: 2;
 		grid-column: 1;
