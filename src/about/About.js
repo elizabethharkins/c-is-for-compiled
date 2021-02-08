@@ -27,7 +27,7 @@ export const About = () => {
 			<div className="drawing"></div>
 			<a href="mailto:eliz@betsthewebdev.com?Subject=Hi, Liz!" target="_top" className="invite aboutemph">
 				Electronic mail me!
-    		</a>
+			</a>
 		</div>
 	);
 }

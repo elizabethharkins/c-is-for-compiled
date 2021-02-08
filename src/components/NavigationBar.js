@@ -9,7 +9,7 @@ const NavStyles = styled.div`
 	.navbar { 
 		padding: 0.25rem 1rem 0.25rem 1rem;
 		position: fixed;
-    	top: 0;
+		top: 0;
 		width: 100vw;
 	}
 	a, .navbar-nav, .navbar-light .nav-link {
@@ -70,18 +70,18 @@ export function NavigationBar() {
 	}
 
 	switch (path) {
-        case "/":
-        	styles = styles.homenav
-          	break;
-      	case "/about":
-        	styles = styles.aboutnav
-          	break;
-        case "/thecollection":
-        	styles = styles.collectionnav
-        	break;
-        default:
-          	styles = styles.homenav
-          	break;
+		case "/":
+			styles = styles.homenav
+			break;
+		case "/about":
+			styles = styles.aboutnav
+			break;
+		case "/thecollection":
+			styles = styles.collectionnav
+			break;
+		default:
+			styles = styles.homenav
+			break;
 	  }
 
 	return (

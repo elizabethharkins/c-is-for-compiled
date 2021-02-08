@@ -119,7 +119,7 @@ label::after {
 
 @media screen and (max-width: 33.250em) {
 	.content {
-		margin: -5em auto 0 auto;
+		margin: 1em auto 0 auto;
 	}
 	.slidecontainer {
 		margin: 3vh auto;

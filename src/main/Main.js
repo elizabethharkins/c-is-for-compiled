@@ -3,6 +3,7 @@
 import React from "react";
 import "./Main.css";
 
+
 class Main extends React.Component {
 
 	state = {
@@ -24,31 +25,31 @@ class Main extends React.Component {
 			currentStoryValue: this.state.storyValues[e.target.value],
 		});
 
-	    const input = document.getElementById("myStory");
-	    const gauge = (input.value / input.max) * 100;
-	    const rangeValueElement = document.querySelector("#range-value");
+		const input = document.getElementById("myStory");
+		const gauge = (input.value / input.max) * 100;
+		const rangeValueElement = document.querySelector("#range-value");
 		const fillAreaElement = document.querySelector(".fill-area");
 
 		const hueRotate = "hue-rotate(" + gauge + "deg)";
 	  
-	  	rangeValueElement.textContent = input.value;
-	  	rangeValueElement.style.filter = hueRotate;
+		rangeValueElement.textContent = input.value;
+		rangeValueElement.style.filter = hueRotate;
 	  
-	  	input.style.filter = hueRotate;
+		input.style.filter = hueRotate;
 	  
-	  	fillAreaElement.style.left = gauge + "vw";
-	  	fillAreaElement.style.width = (100-gauge) + "vw";
-	  	fillAreaElement.style.filter = hueRotate;
+		fillAreaElement.style.left = gauge + "vw";
+		fillAreaElement.style.width = (100-gauge) + "vw";
+		fillAreaElement.style.filter = hueRotate;
 
-	  	if (e.target.value === "4") {
-	  		setTimeout(function() { 
-	  			document.querySelector(".navbar").style.zIndex = 4;
-	  		}, 1000);
-	  		return;
-	  	}
-	  	else {
-	  		document.querySelector(".navbar").style.zIndex = 2;
-	  	}
+		if (e.target.value === "4") {
+			setTimeout(function() { 
+				document.querySelector(".navbar").style.zIndex = 4;
+			}, 1000);
+			return;
+		}
+		else {
+			document.querySelector(".navbar").style.zIndex = 2;
+		}
 	};
 
 	render() {
@@ -57,16 +58,16 @@ class Main extends React.Component {
 
 		return (
 			<div className="page">
-			    <div className="effects-container">
-			      	<div className="fill-area"></div>
-		        	<main>
-		            	<p className="content"><span id="output">{[currentStoryValue]}</span></p>
-		            	<div className="slidecontainer">
-		              		<label id="range-value" htmlFor="range">{rangeValues[currentRangeValue]}</label>
-		              		<input 
-		              			onChange={this.handleInputChange}
-		              			type={"range"} 
-		              			name={"range"} 
+				<div className="effects-container">
+					<div className="fill-area"></div>
+					<main>
+						<p className="content"><span id="output">{[currentStoryValue]}</span></p>
+						<div className="slidecontainer">
+							<label id="range-value" htmlFor="range">{rangeValues[currentRangeValue]}</label>
+							<input 
+								onChange={this.handleInputChange}
+								type={"range"} 
+								name={"range"} 
 								min={0} 
 								max={4} 
 								defaultValue={0} 
@@ -82,9 +83,9 @@ class Main extends React.Component {
 								<option>75</option>
 								<option>100</option>
 							</datalist>
-		            	</div>
-		        	</main>
-			    </div>
+						</div>
+					</main>
+				</div>
 			</div>
 
 		);
@@ -92,4 +93,9 @@ class Main extends React.Component {
 	}
 }
 
+
 export default Main;
+
+
+
+
