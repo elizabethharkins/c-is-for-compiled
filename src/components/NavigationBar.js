@@ -27,9 +27,6 @@ const NavStyles = styled.div`
 	.navbar-light .navbar-toggler {
 		padding: 0.125em;
 	}
-	.navbar-light .navbar-toggler-icon {
-		background-image: linear-gradient(180deg, var(--blue-magenta), var(--light-accent-blue), var(--blue-magenta), var(--light-accent-blue), var(--blue-magenta), var(--light-accent-blue), var(--blue-magenta), var(--light-accent-blue), var(--blue-magenta), var(--light-accent-blue), var(--blue-magenta));
-	}
 	.navbar-nav {
 		margin-top: 1em;
 		margin-bottom: 1em;
@@ -58,12 +55,12 @@ export function NavigationBar() {
 			borderBottom: "none",
 		},
 		aboutnav: {
-			background: "rgb(153, 33, 232, 0.8)",
+			background: "rgb(153, 33, 232, 0.9)",
 			borderBottom: "1px solid rgba(0, 0, 0, 0.2)",
 			zIndex: 4
 		},
 		collectionnav: {
-			background: "rgba(51, 51, 51, 0.8)",
+			background: "rgba(51, 51, 51, 0.9)",
 			borderBottom: "1px solid rgba(0, 0, 0, 0.2)",
 			zIndex: 4
 		}

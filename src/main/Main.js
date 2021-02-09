@@ -13,8 +13,8 @@ class Main extends React.Component {
 			["Hi, my name is Liz -", 
 			"Hi, Liz!", 
 			"- and I'm a teacher-turned-developer who met code when I wanted to give my classroom community a modern upgrade.", 
-			"I'd love to work for a great company in a frontend role, with a great team, where I can continue improving and contributing.", 
-			"I find meaning in interacting with others in the techosphere and learning from everyone's wealth of experience and knowledge. Let's build better together!"],
+			"I'd love to work for a great company in a frontend role, with a great team that values learning, inclusion, and diversity - and where I can continue improving and contributing.", 
+			"Let's build better together!"],
 		currentStoryValue: "Hi, my name is Liz -",
 	};
 
