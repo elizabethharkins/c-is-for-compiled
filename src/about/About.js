@@ -8,7 +8,9 @@ export const About = () => {
 	return (
 		<div className="magazine">
 
-			<div className="title">Hello</div>
+			<div className="title">
+				Hello
+			</div>
 
 			<div className="content1">
 				<h1>About Me</h1>

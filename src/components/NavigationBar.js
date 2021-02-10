@@ -6,6 +6,9 @@ import styled from "styled-components";
 
 
 const NavStyles = styled.div`
+	font-family: 'Droid Serif', serif;
+	font-size: 1.1em;
+
 	.navbar { 
 		padding: 0.25rem 1rem 0.25rem 1rem;
 		position: fixed;
@@ -28,14 +31,13 @@ const NavStyles = styled.div`
 		padding: 0.125em;
 	}
 	.navbar-nav {
-		margin-top: 1em;
-		margin-bottom: 1em;
+		margin-top: 0.25em;
+		margin-bottom: 0.25em;
 	}
 	.nav-item {
 		text-align: center;
 		background: rgba(255,255,255, 0.1);
 		transition: all .6s ease;
-		border-bottom: 1px solid var(--light-accent-blue);
 		&:hover { box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
 	}
 	.nav-link.active {
@@ -51,17 +53,17 @@ export function NavigationBar() {
 
 	let styles = {
 		homenav: {
-			background: "linear-gradient(to right, #ff5c5c, #ffa860, #e3dc44, #57b02a)",
-			borderBottom: "none",
+			background: "rgba(50, 45, 127, 0.9)",
+			borderBottom: "1px solid var(--blue-magenta)",
 		},
 		aboutnav: {
-			background: "rgb(153, 33, 232, 0.9)",
-			borderBottom: "1px solid rgba(0, 0, 0, 0.2)",
+			background: "rgba(153, 33, 232, 0.9)",
+			borderBottom: "1px solid orange",
 			zIndex: 4
 		},
 		collectionnav: {
 			background: "rgba(51, 51, 51, 0.9)",
-			borderBottom: "1px solid rgba(0, 0, 0, 0.2)",
+			borderBottom: "2px solid #227CE6",
 			zIndex: 4
 		}
 	}
@@ -79,13 +81,14 @@ export function NavigationBar() {
 		default:
 			styles = styles.homenav
 			break;
-	  }
+	}
+
 
 	return (
 		<NavStyles>
 			<Navbar expand="lg" style={styles}>
-				<Navbar.Brand href="/">Elizabeth Harkins</Navbar.Brand>
-				<Navbar.Toggle aria-controls="basic-navbar-nav"/>
+				<Navbar.Brand href="/">Liz Harkins</Navbar.Brand>
+				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Nav className="ml-auto">
 						{/* <Nav.Item><Nav.Link href="/">Home</Nav.Link></Nav.Item> */}

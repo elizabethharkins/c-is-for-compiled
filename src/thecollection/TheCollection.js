@@ -5,7 +5,7 @@ import "./TheCollection.css";
 import { Header } from "./components/Header";
 import styled from "styled-components";
 const GridWrapper = styled.div`
-	background: var(--light-pastel-purple);
+	background: var(--collection-bg-gradient);
 	color: var(--dark-grey);
 	font-family: 'Droid Serif', serif;
 	font-size: 16px;
@@ -19,7 +19,7 @@ const GridWrapper = styled.div`
 		margin: 140px auto 0 auto;
 	}
 	@media (max-width: 85em) {
-		margin: 140px 1% 0 1%;
+		margin: 140px auto 0 auto;
 	}
 	@media (min-width: 37.5em) and (max-width: 64em) {
 		grid-template-rows: 0.9fr 3.5fr;

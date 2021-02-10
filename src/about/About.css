@@ -67,6 +67,7 @@
 	bottom: 8%;
 	color: var(--med-light-yellow);
 	/*font-size: calc(12px + 1.1vw);*/
+	font-family: 'Droid Serif', serif;
 	font-size: 1.5em;
 	grid-row: 2;
 	grid-column: 4;
@@ -187,7 +188,7 @@
 	.title {
 		font-size: calc(10px + 3.6vw);
 		grid-row: 1;
-		z-index: 3;
+		/*z-index: 4;*/
 	}
 
 	.sunimage {
@@ -271,4 +272,4 @@
 		width: 70%;
 		z-index: 3;
 	}
-  }
+}
