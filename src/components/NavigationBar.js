@@ -36,7 +36,6 @@ const NavStyles = styled.div`
 	}
 	.nav-item {
 		text-align: center;
-		background: rgba(255,255,255, 0.1);
 		transition: all .6s ease;
 		&:hover { box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
 	}
@@ -53,17 +52,17 @@ export function NavigationBar() {
 
 	let styles = {
 		homenav: {
-			background: "rgba(50, 45, 127, 0.9)",
+			background: "rgba(50,45,127,255)",
 			borderBottom: "1px solid var(--blue-magenta)",
 		},
 		aboutnav: {
-			background: "rgba(153, 33, 232, 0.9)",
-			borderBottom: "1px solid orange",
+			background: "var(--cover-gradient)",
+			borderBottom: "1px solid var(--blue-magenta)",
 			zIndex: 4
 		},
 		collectionnav: {
-			background: "rgba(51, 51, 51, 0.9)",
-			borderBottom: "2px solid #227CE6",
+			background: "var(--cover-gradient)",
+			borderBottom: "1px solid var(--blue-magenta)",
 			zIndex: 4
 		}
 	}

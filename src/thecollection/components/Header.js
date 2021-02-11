@@ -46,8 +46,8 @@ const HeaderStyles = styled.div`
 		padding: 5px;
 	}
 	.emph {
-		border-bottom: 2px solid var(--charcoal-grey);
-		border-top: 2px solid var(--charcoal-grey);
+		border-bottom: 2px solid var(--blue-magenta);
+		border-top: 2px solid var(--blue-magenta);
 		font-size: 1.3em;
 		font-style: italic;
 		padding: 11px;

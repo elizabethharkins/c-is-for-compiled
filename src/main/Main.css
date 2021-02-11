@@ -2,7 +2,8 @@
 
 .fill-area  {
 	bottom: -72px;
-	background: var(--fill-area-bg-color);
+	/*background: var(--fill-area-bg-color);*/
+	background: rgba(50,45,127,255);
 	box-shadow: inset 3px 3px 5px -1px #111;
 	pointer-events: none;
 	position:fixed;
@@ -23,9 +24,9 @@ main {
 	align-items: center;
 	width: 100vw;
 	height: 100vh;
-	background: var(--main-area-bg-color);
+	background: var(--end-retro-stripe-gradient);
 }
- main::after {
+/* main::after {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -34,7 +35,7 @@ main {
 	height: 100vh;
 	background: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) 1px, transparent 1px, transparent 2px);
 	pointer-events: none;
-}
+}*/
 
 .content {
 	color: var(--light-accent-blue);

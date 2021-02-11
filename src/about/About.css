@@ -7,10 +7,13 @@
 	grid-template-rows: 130px 2fr 1fr;
 	grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
 	height: 800px;
+	/*height: 550px;*/
 	max-width: 80em;
 	outline: 6px solid #121219;
 	width: 95vw;
-	margin: 140px auto auto auto;
+	/*width: 80vw;*/
+	/*margin: 140px auto auto auto;*/
+	margin: 100px auto auto auto;
 }
 
 /* ---------- title ---------- */
@@ -46,6 +49,8 @@
 }
 
 .drawing {
+	/*display: none;*/
+
 	background-image: url(img/mebygv.png);
 	background-position: bottom;
 	background-repeat: no-repeat;
@@ -94,7 +99,7 @@
 }
 
 .content2 {
-	align-items: end;
+	align-items: center;
 	box-shadow: var(--content-box-shadow);
 	display: grid;
 	grid-row: 3 / 4;
@@ -113,10 +118,19 @@
 	background-color: #a9a9a9;
 	font-family: 'Roboto Mono', monospace;
 	font-size: 16px;
-	overflow: scroll;
+	/*overflow: scroll;*/
 	padding: 20px 20px;
 }
+.content2 p {
+	transform: rotate(-2deg);
+}
 
+.content1, 
+.content2,
+.content1 p,
+.content2 p {
+	border-radius: 0.125em;
+}
 .content1 h1, 
 .content1 p,
 .content2 p {
@@ -141,8 +155,8 @@
 	grid-column: 4;
 	grid-row: 3;
 	height: 66%;
-	padding-bottom: 15px;
-	padding-right: 35px;
+	padding-bottom: 20px;
+	padding-right: 25px;
 	text-align: right;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -183,6 +197,7 @@
 		grid-template-rows: 120px 4fr 3fr 3fr 2fr 0.5fr;/*130px 2fr 1fr*/
 		grid-template-columns: 95vw; /*1.5fr 1fr 1fr 1.5fr*/
 		height: 1800px;
+		width: 95vw;
 	}
 
 	.title {
@@ -237,7 +252,9 @@
 		transform: rotate(3deg);
 	}
 
-	.drawing {
+	.drawing {		
+		display: block;
+
 		background-image: url(img/mebygv.png);
 		background-position: auto;
 		background-repeat: no-repeat;

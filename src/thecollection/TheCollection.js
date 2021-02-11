@@ -5,7 +5,8 @@ import "./TheCollection.css";
 import { Header } from "./components/Header";
 import styled from "styled-components";
 const GridWrapper = styled.div`
-	background: var(--collection-bg-gradient);
+	background: linear-gradient(72deg,var(--blue-magenta) -14%,rgba(0,0,0,0.2) 25%);
+	transition: background 6s ease-in;
 	color: var(--dark-grey);
 	font-family: 'Droid Serif', serif;
 	font-size: 16px;
@@ -75,7 +76,7 @@ export const TheCollection = () => {
 						</ul>
 					</div>
 
-					<div className="column two">
+					<div className="column two accent-column">
 						<div className="head">
 							<span className="headline hl3">Your Story Here!</span>
 							<p>
@@ -90,11 +91,11 @@ export const TheCollection = () => {
 					</div>
 
 
-					<div className="column three">
+					<div className="column three accent-column">
 						<div className="head">
 							<span className="headline hl1">Your Story Here!</span>
 							<p>
-								<span className="headline hl2">Redux</span>
+								<span className="headline hl2">Fortran</span>
 							</p>
 						</div>
 						<p>Play riveting piece on synthesizer keyboard. Rub whiskers on bare skin act innocent scratch the postman wake up lick paw wake up owner meow meow, and loves cheeseburgers, yet spread kitty litter all over house. Sun bathe check cat door for ambush 10 times before coming in.
@@ -108,11 +109,11 @@ export const TheCollection = () => {
 						</figure>
 					</div>
 
-					<div className="column four">
+					<div className="column four accent-column">
 						<div className="head">
 							<span className="headline hl3">Your Story Here!</span>
 							<p>
-								<span className="headline hl4">React</span>
+								<span className="headline hl4">Perl</span>
 							</p>
 						</div>
 						<p>Play riveting piece on synthesizer keyboard. Rub whiskers on bare skin act innocent scratch the postman wake up lick paw wake up owner meow meow, and loves cheeseburgers, yet spread kitty litter all over house. Sun bathe check cat door for ambush 10 times before coming in.
@@ -122,7 +123,7 @@ export const TheCollection = () => {
 						</p>
 					</div>
 
-					<div className="column five">
+					<div className="column five accent-column">
 						<div className="head">
 							<span className="headline hl1">Your Story Here!</span>
 							<p>
@@ -136,7 +137,7 @@ export const TheCollection = () => {
 						</p>
 					</div>
 
-					<div className="column seven">
+					<div className="column seven accent-column">
 						<div className="head">
 							<span className="headline hl1">Your Story Here!</span>
 							<p>
