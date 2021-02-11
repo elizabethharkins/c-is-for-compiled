@@ -13,7 +13,7 @@ function App() {
 
 	return (
 		<React.Fragment>
-			<Router basename={process.env.PUBLIC_URL}>
+			<Router>
 				<NavigationBar />
 
 				<Switch>
