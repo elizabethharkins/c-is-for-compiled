@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/cover-story/static/css/main.fc7d7e76.chunk.css",
+    "main.js": "/cover-story/static/js/main.4f29ac45.chunk.js",
+    "main.js.map": "/cover-story/static/js/main.4f29ac45.chunk.js.map",
+    "runtime-main.js": "/cover-story/static/js/runtime-main.42036d2d.js",
+    "runtime-main.js.map": "/cover-story/static/js/runtime-main.42036d2d.js.map",
+    "static/css/2.150d169a.chunk.css": "/cover-story/static/css/2.150d169a.chunk.css",
+    "static/js/2.1570f747.chunk.js": "/cover-story/static/js/2.1570f747.chunk.js",
+    "static/js/2.1570f747.chunk.js.map": "/cover-story/static/js/2.1570f747.chunk.js.map",
+    "index.html": "/cover-story/index.html",
+    "static/css/2.150d169a.chunk.css.map": "/cover-story/static/css/2.150d169a.chunk.css.map",
+    "static/css/main.fc7d7e76.chunk.css.map": "/cover-story/static/css/main.fc7d7e76.chunk.css.map",
+    "static/js/2.1570f747.chunk.js.LICENSE.txt": "/cover-story/static/js/2.1570f747.chunk.js.LICENSE.txt",
+    "static/media/TheCollection.css": "/cover-story/static/media/blondie.6623f4c5.png",
+    "static/media/About.css": "/cover-story/static/media/synthwave.5b2b607b.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.42036d2d.js",
+    "static/css/2.150d169a.chunk.css",
+    "static/js/2.1570f747.chunk.js",
+    "static/css/main.fc7d7e76.chunk.css",
+    "static/js/main.4f29ac45.chunk.js"
+  ]
+}
