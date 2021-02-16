@@ -31,6 +31,9 @@
 	--cover-gradient:
 		radial-gradient(ellipse at bottom left, transparent, rgba(50,45,127,255)),
         radial-gradient(ellipse at bottom left, transparent, rgba(50,45,127,255));
+    --nav-gradient:
+    	radial-gradient(at left bottom, rgba(50, 45, 127, 0.6), rgb(50, 45, 127)), 
+    	radial-gradient(at left bottom, rgba(50, 45, 127, 0.6), rgb(50, 45, 127));
 	--collection-bg-gradient:
 		radial-gradient(ellipse at bottom left, transparent, #9921e8),
         radial-gradient(ellipse at bottom left, transparent, #b19cd9);

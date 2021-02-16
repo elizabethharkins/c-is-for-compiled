@@ -20,7 +20,7 @@ const GridWrapper = styled.div`
 		margin: 140px auto 0 auto;
 	}
 	@media (max-width: 85em) {
-		margin: 140px auto 0 auto;
+		margin: 5% auto 0;
 	}
 	@media (min-width: 37.5em) and (max-width: 64em) {
 		grid-template-rows: 0.9fr 3.5fr;
@@ -78,7 +78,7 @@ export const TheCollection = () => {
 
 					<div className="column two accent-column">
 						<div className="head">
-							<span className="headline hl3">Your Story Here!</span>
+							<span className="headline hl3">Coming Soon!</span>
 							<p>
 								<span className="headline hl4">JavaScript</span>
 							</p>
@@ -125,7 +125,7 @@ export const TheCollection = () => {
 
 					<div className="column five accent-column">
 						<div className="head">
-							<span className="headline hl1">Your Story Here!</span>
+							<span className="headline hl1">Coming Soon!</span>
 							<p>
 								<span className="headline hl4">JavaScript</span>
 							</p>
@@ -139,7 +139,7 @@ export const TheCollection = () => {
 
 					<div className="column seven accent-column">
 						<div className="head">
-							<span className="headline hl1">Your Story Here!</span>
+							<span className="headline hl1">Coming Soon!</span>
 							<p>
 								<span className="headline hl4">React</span>
 							</p>

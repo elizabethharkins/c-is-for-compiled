@@ -41,15 +41,15 @@ class Main extends React.Component {
 		fillAreaElement.style.width = (100-gauge) + "vw";
 		fillAreaElement.style.filter = hueRotate;
 
-		if (e.target.value === "4") {
-			setTimeout(function() { 
-				document.querySelector(".navbar").style.zIndex = 4;
-			}, 1000);
-			return;
-		}
-		else {
-			document.querySelector(".navbar").style.zIndex = 2;
-		}
+		// if (e.target.value === "4") {
+		// 	setTimeout(function() { 
+		// 		document.querySelector(".navbar").style.zIndex = 4;
+		// 	}, 1000);
+		// 	return;
+		// }
+		// else {
+		// 	document.querySelector(".navbar").style.zIndex = 2;
+		// }
 	};
 
 	render() {
