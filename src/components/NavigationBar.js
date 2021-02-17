@@ -46,51 +46,15 @@ const NavStyles = styled.div`
 
 export function NavigationBar() {
 
-	// let path = window.location.href;
-	// console.log(path);
-
-	// let styles = {
-	// 	homenav: {
-	// 		background: "rgba(50,45,127,255)",
-	// 		borderBottom: "1px solid var(--blue-magenta)",
-	// 	},
-	// 	aboutnav: {
-	// 		background: "var(--cover-gradient)",
-	// 		borderBottom: "1px solid var(--blue-magenta)",
-	// 		zIndex: 4
-	// 	},
-	// 	collectionnav: {
-	// 		background: "var(--cover-gradient)",
-	// 		borderBottom: "1px solid var(--blue-magenta)",
-	// 		zIndex: 4
-	// 	}
-	// }
-
 	let styles = {
 		background: "var(--nav-gradient)",
 		borderBottom: "1px solid var(--blue-magenta)",
 	}
 
-	// switch (path) {
-	// 	case "/":
-	// 		styles = styles.homenav
-	// 		break;
-	// 	case "/about":
-	// 		styles = styles.aboutnav
-	// 		break;
-	// 	case "/thecollection":
-	// 		styles = styles.collectionnav
-	// 		break;
-	// 	default:
-	// 		styles = styles.homenav
-	// 		break;
-	// }
-
-
 	return (
 		<NavStyles>
 			<Navbar expand="lg" style={styles}>
-				<Navbar.Brand href="https://elizabethharkins.github.io/cover-story/#/">Liz Harkins</Navbar.Brand>
+				<Navbar.Brand href="/">Liz Harkins</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Nav className="ml-auto">
@@ -98,8 +62,8 @@ export function NavigationBar() {
 						<Nav.Item><Nav.Link href="https://www.linkedin.com/in/emharkins/" target="_blank">in</Nav.Link></Nav.Item>
 						<Nav.Item><Nav.Link href="https://twitter.com/_lizzith" target="_blank">chirp</Nav.Link></Nav.Item>
 						<Nav.Item><Nav.Link href="https://github.com/elizabethharkins" target="_blank">hub</Nav.Link></Nav.Item>
-						<Nav.Item><Nav.Link href="https://elizabethharkins.github.io/cover-story/#/about">About</Nav.Link></Nav.Item>
-						<Nav.Item><Nav.Link href="https://elizabethharkins.github.io/cover-story/#/thecollection">The Collection</Nav.Link></Nav.Item>
+						<Nav.Item><Nav.Link href="/about">About</Nav.Link></Nav.Item>
+						<Nav.Item><Nav.Link href="/thecollection">The Collection</Nav.Link></Nav.Item>
 					</Nav>
 				</Navbar.Collapse>
 			</Navbar>

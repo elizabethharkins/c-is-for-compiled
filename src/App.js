@@ -2,7 +2,7 @@
 
 import React from "react";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { NavigationBar } from "./components/NavigationBar";
 import { Home } from "./Home";
 import { About } from "./about/About";
@@ -13,7 +13,7 @@ function App() {
 
 	return (
 		<React.Fragment>
-			<Router basename="/cover-story">
+			<Router>
 				<NavigationBar />
 
 				<Switch>
