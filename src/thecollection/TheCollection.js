@@ -1,8 +1,8 @@
 
 
 import React from "react";
-import { Header } from "./components/Header";
-import { Columns } from "./components/Columns";
+import { NewsHeader } from "./components/NewsHeader";
+import { NewsBody } from "./components/NewsBody";
 
 import styled from "styled-components";
 const GridWrapper = styled.div`
@@ -38,8 +38,8 @@ const GridWrapper = styled.div`
 export const TheCollection = () => {
 	return (
 		<GridWrapper>
-			<Header />
-			<Columns />
+			<NewsHeader />
+			<NewsBody />
 		</GridWrapper>
 	);
 }

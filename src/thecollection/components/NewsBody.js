@@ -360,7 +360,7 @@ const ColumnsGridWrapper = styled.div`
 `;
 
 
-export const Columns = () => {
+export const NewsBody = () => {
 	return (
 		<ColumnsGridWrapper>
 			<div className="columns">
@@ -370,12 +370,12 @@ export const Columns = () => {
 					<ColumnList />
 				</div>
 
-				<div className="column two">
+				<div className="column two accent-column">
 					<Headline headings={{ heading: "Face Found App", subheading: "Full Stack JavaScript" }}/>
 					<ColumnBody notes={{ description: "Play riveting piece on synthesizer keyboard. Rub whiskers on bare skin act innocent scratch the postman wake up lick paw wake up owner meow meow, and loves cheeseburgers.", live: "/", github: "https://github.com/elizabethharkins" }}/>
 				</div>
 
-				<div className="column three">
+				<div className="column three accent-column">
 					<Headline headings={{ heading: "Read With Me App", subheading: "Full Stack JavaScript" }}/>
 					<ColumnBody notes={{ description: "Play riveting piece on synthesizer keyboard. Rub whiskers on bare skin act innocent scratch the postman wake up lick paw wake up owner meow meow, and loves cheeseburgers.", live: "/", github: "https://github.com/elizabethharkins" }}/>
 					<figure className="figure">
@@ -383,17 +383,17 @@ export const Columns = () => {
 					</figure>
 				</div>
 
-				<div className="column four">
+				<div className="column four accent-column">
 					<Headline headings={{ heading: "Nestiny Realty", subheading: "JavaScript" }}/>
 					<ColumnBody notes={{ description: "Play riveting piece on synthesizer keyboard. Rub whiskers on bare skin act innocent scratch the postman wake up lick paw wake up owner meow meow, and loves cheeseburgers.", live: "/", github: "https://github.com/elizabethharkins" }}/>
 				</div>
 
-				<div className="column five">
+				<div className="column five accent-column">
 					<Headline headings={{ heading: "Grid-Folio", subheading: "React, CSS Grid" }}/>
 					<ColumnBody notes={{ description: "Play riveting piece on synthesizer keyboard. Rub whiskers on bare skin act innocent scratch the postman wake up lick paw wake up owner meow meow, and loves cheeseburgers.", live: "/", github: "https://github.com/elizabethharkins" }}/>
 				</div>
 
-				<div className="column seven">
+				<div className="column seven accent-column">
 					<Headline headings={{ heading: "Grid Layout Collective", subheading: "CSS Grid" }}/>
 					<ColumnBody notes={{ description: "Play riveting piece on synthesizer keyboard. Rub whiskers on bare skin act innocent scratch the postman wake up lick paw wake up owner meow meow, and loves cheeseburgers.", live: "/", github: "https://github.com/elizabethharkins" }}/>
 				</div>

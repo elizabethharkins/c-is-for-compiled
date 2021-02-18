@@ -149,7 +149,7 @@ const HeaderStyles = styled.div`
 `;
 
 
-export const Header = () => {
+export const NewsHeader = () => {
 	return (
 		<HeaderStyles className="header">
 			<h1>The Collection</h1>
