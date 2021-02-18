@@ -2,9 +2,9 @@
 
 import React from "react";
 import "../TheCollection.css";
-import { Headline } from "./Headline";
-import { AccentHeadline } from "./AccentHeadline";
-import { ColumnBody } from "./ColumnBody";
+import Headline from "./Headline";
+import ColumnBody from "./ColumnBody";
+import { SpeechBubble } from "./SpeechBubble";
 import { ColumnList } from "./ColumnList";
 
 import styled from "styled-components";
@@ -56,6 +56,11 @@ const ColumnsGridWrapper = styled.div`
 		grid-column: 2 / 4;
 		text-align: center;
 	}
+	.three p {
+		text-align: center;
+	    max-width: 80%;
+	    margin: 1rem auto;	
+	}
 	.four {
 		border-left: 1px solid rgba(50,45,127,255);
 		grid-row: 1;
@@ -80,69 +85,19 @@ const ColumnsGridWrapper = styled.div`
 		text-align: center;
 	}
 
-
-
-	.speech-bubble {
-		font-family: 'Roboto Mono', monospace;
-		font-size: .9em;
-		position: relative;
-		background: var(--grey);
-		border-radius: .4em;
-		grid-row: 3;
-		grid-column: 4;
-		position: relative;
-		bottom: 0;
-		right: 10px;
-		height: 50px;
-		width: 50px;
-
-		display: flex;
-		  align-items: center;
-		  justify-content: center;
-
-		grid-column: 4;
-		grid-row: 3 / 4;
-		height: 25%;
-
-		text-align: center;
-		text-transform: uppercase;
-		width: 40%;
-		z-index: 2;
-		position: relative;
-		right: 145px;
-		top: 60%;
-		padding: 1%;
-	}
-
-	.speech-bubble:after {
-		content: '';
-		position: absolute;
-		right: 0;
-		top: 50%;
-		width: 0;
-		height: 0;
-		border: 20px solid transparent;
-		border-left-color: var(--grey);
-		border-right: 0;
-		border-top: 0;
-		margin-top: -10px;
-		margin-right: -20px;
-	}
-
 	.links {
 		display: flex;
 			justify-content: center;
 			align-items: center;
 			flex-flow: row;
 		font-style: italic;
+		margin-top: 2em;
 	}
-
 	.links a {
 		color: inherit;
 		padding: 5px;
 		text-decoration: none;
 	}
-
 	.links a:hover {
 		color: var(--blue-magenta);
 		text-decoration: underline;
@@ -157,9 +112,8 @@ const ColumnsGridWrapper = styled.div`
 		display: block;
 		margin: 40px 0 40px 0;
 		font-feature-settings: "liga", "dlig";
-		max-width: 95%;
+		max-width: 90%;
 	}
-
 	.column .citation:before {
 		content: '';
 		width: 100px;
@@ -167,7 +121,6 @@ const ColumnsGridWrapper = styled.div`
 		display: block;
 		margin: 0 auto;
 	}
-
 	.column .citation:after {
 		content: '';
 		width: 100px;
@@ -179,7 +132,6 @@ const ColumnsGridWrapper = styled.div`
 	.column .figure {
 		margin: 0 0 20px;
 	}
-
 	.column .figcaption {
 		font-style: italic;
 		font-size: 12px;
@@ -189,19 +141,12 @@ const ColumnsGridWrapper = styled.div`
 		.column .citation {
 			margin-left: 10px;
 		}
-
-		.speech-bubble {
-			right: 120px;
-			top: 75%;
-		}
 	}
-
 	@media (min-width: 64em) {
 		.column {
 			margin-bottom: 50px;
 		}
 	}
-
 	@media (max-width: 64em) {
 		.one {
 			text-align: center;
@@ -273,15 +218,6 @@ const ColumnsGridWrapper = styled.div`
 				height: 150%;
 				bottom: 5%;
 	   }
-
-	   .speech-bubble {
-			font-size: .8em;
-			grid-row: 5;
-			grid-column: 4;
-			top: 80%;
-			height: 20%;
-			right: 115px;
-	   }
 	}
 
 	@media (max-width: 600px) {	
@@ -345,24 +281,10 @@ const ColumnsGridWrapper = styled.div`
 			background-size: 40%;
 			grid-row: 7;
 			grid-column: 1;
-
 			margin-top: 10px;
-
 			position: relative;
 				height: 115%;
 				bottom: -85px;
-	   }
-
-	   .speech-bubble {
-			font-size: .8em;
-			grid-row: 7;
-			grid-column: 1;
-			padding: auto 1px;
-			height: 14%;
-			width: 26%;
-
-			left: 125px;
-			top: 85%;
 	   }
 	}
 
@@ -429,29 +351,12 @@ const ColumnsGridWrapper = styled.div`
 			background-size: 50%;
 			grid-row: 7;
 			grid-column: 1;
-
 			margin-top: 20px;
-
 			position: relative;
 				height: 110%;
 				bottom: -120px;
 	   }
-
-	   .speech-bubble {
-			font-size: .8em;
-
-			grid-row: 7;
-			grid-column: 1;
-
-			height: 15%;
-			width: 20%;
-
-			left: 60px;
-			top: 90%;
-	   }
 	}
-
-}
 `;
 
 
@@ -461,37 +366,36 @@ export const Columns = () => {
 			<div className="columns">
 
 				<div className="column one">
-					<Headline />
+					<Headline headings={{ heading: "Build, Build, Build", subheading: "I love ..." }}/>
 					<ColumnList />
 				</div>
 
-				<div className="column two accent-column">
-					<AccentHeadline />
-					<ColumnBody />
+				<div className="column two">
+					<Headline headings={{ heading: "Face Found App", subheading: "Full Stack JavaScript" }}/>
+					<ColumnBody notes={{ description: "Play riveting piece on synthesizer keyboard. Rub whiskers on bare skin act innocent scratch the postman wake up lick paw wake up owner meow meow, and loves cheeseburgers.", live: "/", github: "https://github.com/elizabethharkins" }}/>
 				</div>
 
-				<div className="column three accent-column">
-					<Headline />
-					<ColumnBody />
+				<div className="column three">
+					<Headline headings={{ heading: "Read With Me App", subheading: "Full Stack JavaScript" }}/>
+					<ColumnBody notes={{ description: "Play riveting piece on synthesizer keyboard. Rub whiskers on bare skin act innocent scratch the postman wake up lick paw wake up owner meow meow, and loves cheeseburgers.", live: "/", github: "https://github.com/elizabethharkins" }}/>
 					<figure className="figure">
-						<img className="media" src="" alt="" />
 						<figcaption className="figcaption">The way you view it is the way you do it.</figcaption>
 					</figure>
 				</div>
 
-				<div className="column four accent-column">
-					<AccentHeadline />
-					<ColumnBody />
+				<div className="column four">
+					<Headline headings={{ heading: "Nestiny Realty", subheading: "JavaScript" }}/>
+					<ColumnBody notes={{ description: "Play riveting piece on synthesizer keyboard. Rub whiskers on bare skin act innocent scratch the postman wake up lick paw wake up owner meow meow, and loves cheeseburgers.", live: "/", github: "https://github.com/elizabethharkins" }}/>
 				</div>
 
-				<div className="column five accent-column">
-					<Headline />
-					<ColumnBody />
+				<div className="column five">
+					<Headline headings={{ heading: "Grid-Folio", subheading: "React, CSS Grid" }}/>
+					<ColumnBody notes={{ description: "Play riveting piece on synthesizer keyboard. Rub whiskers on bare skin act innocent scratch the postman wake up lick paw wake up owner meow meow, and loves cheeseburgers.", live: "/", github: "https://github.com/elizabethharkins" }}/>
 				</div>
 
-				<div className="column seven accent-column">
-					<Headline />
-					<ColumnBody />
+				<div className="column seven">
+					<Headline headings={{ heading: "Grid Layout Collective", subheading: "CSS Grid" }}/>
+					<ColumnBody notes={{ description: "Play riveting piece on synthesizer keyboard. Rub whiskers on bare skin act innocent scratch the postman wake up lick paw wake up owner meow meow, and loves cheeseburgers.", live: "/", github: "https://github.com/elizabethharkins" }}/>
 				</div>
 
 				<div className="column six">
@@ -499,8 +403,7 @@ export const Columns = () => {
 					</span>
 				</div>
 				<div className="image"></div>
-				<div className="speech-bubble">Let's chat!</div>
-
+				<SpeechBubble />
 			</div>
 		</ColumnsGridWrapper>
 	);

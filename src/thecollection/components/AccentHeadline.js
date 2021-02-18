@@ -33,7 +33,6 @@ const AccentHeadlineStyles = styled.div`
 		display: block;
 		margin: 0 auto;
 	}
-
 	.subheading:after {
 		border-bottom: 1px solid rgba(50,45,127,255);
 		content: '';

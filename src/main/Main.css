@@ -26,16 +26,6 @@ main {
 	height: 100vh;
 	background: var(--end-retro-stripe-gradient);
 }
- /*main::after {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-	background: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) 1px, transparent 1px, transparent 2px);
-	pointer-events: none;
-}*/
 
 .content {
 	color: var(--light-accent-blue);
@@ -115,7 +105,7 @@ label::after {
 	transition: box-shadow .3s ease-in-out;
 }
 
-/* ---------- @media ---------- */
+/* @media */
 @media screen and (max-width: 52em) {
 	.content {
 		height: 100px;

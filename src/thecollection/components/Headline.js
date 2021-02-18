@@ -18,14 +18,17 @@ const HeadlineStyles = styled.div`
 		padding: var(--headline-padding);
 	}
 	.subheading {
+		color: var(--blue-magenta);
 		font-weight: 700;
 		font-size: 14px;
 		box-sizing: border-box;
 		padding: var(--headline-padding);
+		font-weight: 400;
+		font-style: italic;
 	}
 
 	.subheading:before {
-		border-top: var(--standard-column-border);
+		border-top: 1px solid rgba(50,45,127,255);
 		content: '';
 		width: 100px;
 		height: 7px;
@@ -34,7 +37,7 @@ const HeadlineStyles = styled.div`
 	}
 
 	.subheading:after {
-		border-bottom: var(--standard-column-border);
+		border-bottom: 1px solid rgba(50,45,127,255);
 		content: '';
 		width: 100px;
 		height: 10px;
@@ -54,16 +57,23 @@ const HeadlineStyles = styled.div`
 `;
 
 
-export const Headline = () => {
-	return (
-		<HeadlineStyles>
-			<span className="headline heading">Build, Build, Build!</span>
-			<p>
-				<span className="headline subheading">I love ...</span>
-			</p>
-		</HeadlineStyles>
-	);
+export default class Headline extends React.Component {
+	render () {
+
+		const { heading, subheading } = this.props.headings;
+
+		return (
+			<HeadlineStyles>
+				<span className="headline heading">{ heading }</span>
+				<p>
+					<span className="headline subheading">{ subheading }</span>
+				</p>
+			</HeadlineStyles>
+		);
+	}
 }
+
+
 
 
 

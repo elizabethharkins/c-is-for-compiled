@@ -1,22 +1,19 @@
 
 
-/* ---------- general/zine setup ---------- */
+/* general/zine setup */
 .magazine {
 	background: #e5e5e5;
 	display: grid;
 	grid-template-rows: 130px 2fr 1fr;
 	grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
 	height: 800px;
-	/*height: 550px;*/
 	max-width: 80em;
 	outline: 6px solid #121219;
 	width: 95vw;
-	/*width: 80vw;*/
-	/*margin: 140px auto auto auto;*/
 	margin: 5% auto auto;
 }
 
-/* ---------- title ---------- */
+/* title */
 .title {
 	align-items: end;
 	background: var(--dark-accent-grey);
@@ -36,7 +33,7 @@
 	z-index: 3;
 }
 
-/* ---------- images ---------- */
+/* images */
 .sunimage {
 	background-image: url(./img/synthwave.jpg);
 	background-position: left center;
@@ -49,22 +46,18 @@
 }
 
 .drawing {
-	/*display: none;*/
-
 	background-image: url(img/mebygv.png);
 	background-position: bottom;
 	background-repeat: no-repeat;
 	background-size: 125%;
-
 	grid-row: 2 / 4;
 	grid-column: 1;
 	margin: 0;
 	padding: 0;
-
 	z-index: 2;
 }
 
-/* ---------- quote ---------- */
+/* quote */
 .quote {
 	align-self: end;
 	background: rgba(0,0,0,0.5);
@@ -84,7 +77,7 @@
 	z-index: 3;
 }
 
-/* ---------- content ---------- */
+/* content */
 .content1 {
 	box-shadow: var(--content-box-shadow);
 	display: block;
@@ -92,7 +85,6 @@
 	grid-column: 1 / 2;
 	text-align: left;
 	z-index: 2;
-
 	-ms-transform: rotate(-1deg); /* IE 9 */
 	-webkit-transform: rotate(-1deg); /* Safari 3-8 */
 	transform: rotate(-1deg);
@@ -108,7 +100,6 @@
 	grid-column-gap: 30px;
 	text-align: right;
 	z-index: 2;
-
 	-ms-transform: rotate(1deg); /* IE 9 */
 	-webkit-transform: rotate(1deg); /* Safari 3-8 */
 	transform: rotate(1deg);
@@ -118,7 +109,6 @@
 	background-color: #a9a9a9;
 	font-family: 'Roboto Mono', monospace;
 	font-size: 16px;
-	/*overflow: scroll;*/
 	padding: 20px 20px;
 }
 .content2 p {
@@ -139,7 +129,6 @@
 	padding: 0.5%;
 }
 
-/* ---------- @collection ---------- */
 .invite {
 	background: var(--grey);
 	border-bottom: 1px solid var(--dark-grey);
@@ -163,7 +152,6 @@
 	width: 75%;
 	z-index: 2;
 }
-
 .invite:hover {
 	background-color: var(--med-light-yellow);
 	transition: .7s;
@@ -179,9 +167,8 @@
 	color: var(--dark-accent-grey);
 }
 
-/* ---------- @media ---------- */
+/* @media */
 @media only screen and (min-width: 240px) and (max-width: 479px) {
-
 	.quote {
 		left: 50px;
 	}
@@ -189,7 +176,6 @@
 	.drawing {
 		background-size: 125%;
 	}
-
 }
 
 @media only screen and (max-width: 73em) {
@@ -203,7 +189,6 @@
 	.title {
 		font-size: calc(10px + 3.6vw);
 		grid-row: 1;
-		/*z-index: 4;*/
 	}
 
 	.sunimage {
@@ -246,20 +231,16 @@
 		background-image: radial-gradient(at top right #00ff00, gray);
 		text-align: left;
 		z-index: 2;
-
 		-ms-transform: rotate(3deg); /* IE 9 */
 		-webkit-transform: rotate(3deg); /* Safari 3-8 */
 		transform: rotate(3deg);
 	}
 
 	.drawing {		
-		display: block;
-
 		background-image: url(img/mebygv.png);
 		background-position: auto;
 		background-repeat: no-repeat;
 		background-size: contain;
-
 		grid-row: 5;
 		grid-column: 1;
 		margin: 0;

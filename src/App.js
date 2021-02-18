@@ -9,7 +9,7 @@ import { About } from "./about/About";
 import { TheCollection } from "./thecollection/TheCollection";
 
 
-function App() {
+export const App = () => {
 
 	return (
 		<React.Fragment>
@@ -27,8 +27,6 @@ function App() {
 
 }
 
-
-export default App;
 
 
 

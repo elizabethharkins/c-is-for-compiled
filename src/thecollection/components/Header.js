@@ -149,7 +149,7 @@ const HeaderStyles = styled.div`
 `;
 
 
-export function Header() {
+export const Header = () => {
 	return (
 		<HeaderStyles className="header">
 			<h1>The Collection</h1>

@@ -44,7 +44,7 @@ const NavStyles = styled.div`
 `;
 
 
-export function NavigationBar() {
+export const NavigationBar = () => {
 
 	let styles = {
 		background: "var(--nav-gradient)",
