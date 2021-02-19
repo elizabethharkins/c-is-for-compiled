@@ -1,6 +1,7 @@
 
 
 import React from "react";
+import DateDisplay from "./DateDisplay";
 import styled from "styled-components";
 const HeaderStyles = styled.div`
 	display: flex;
@@ -165,7 +166,7 @@ export const NewsHeader = () => {
 				</div>
 				<div className="supplementary">
 					<h2>Color. Line. Design.</h2>
-					<div>Richmond, VA - Friday, February 19, 2021</div>
+					<DateDisplay />
 				</div>
 			</div>
 		</HeaderStyles>

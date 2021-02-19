@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Column } from "./Column";
-import { storyData } from "../data/storyData";
+import { StoryData } from "../data/StoryData";
 import { NewsFooter } from "./NewsFooter"
 import styled from "styled-components";
 const ColumnsWrapper = styled.div`
@@ -21,7 +21,7 @@ const ColumnsWrapper = styled.div`
 export const NewsBody = () => {
 
 	const columnComponents = 
-		storyData.map(o => <Column key={ o.id } 
+		StoryData.map(o => <Column key={ o.id } 
 			heading={ o.heading } 
 			subheading={ o.subheading } 
 			description={ o.description } 

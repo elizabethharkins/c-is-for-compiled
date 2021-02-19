@@ -1,6 +1,6 @@
 
 
-export const storyData = [
+export const StoryData = [
     {
         id: 1,
         heading: "Face Found App", 
