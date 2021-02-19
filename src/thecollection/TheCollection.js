@@ -3,7 +3,6 @@
 import React from "react";
 import { NewsHeader } from "./components/NewsHeader";
 import { NewsBody } from "./components/NewsBody";
-
 import styled from "styled-components";
 const CollectionWrapper = styled.div`
 	background: var(--collection-bg-gradient);

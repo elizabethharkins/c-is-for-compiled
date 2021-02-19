@@ -2,7 +2,8 @@
 
 import React from "react";
 import { Column } from "./Column";
-import { storyData } from "../data/storyData.js";
+import { storyData } from "../data/storyData";
+import { NewsFooter } from "./NewsFooter"
 import styled from "styled-components";
 const ColumnsWrapper = styled.div`
 	font-size: 0;
@@ -13,50 +14,6 @@ const ColumnsWrapper = styled.div`
 
 	.columns {
 		border-bottom: 10px solid var(--charcoal-grey);
-	}
-
-	.citation {
-		font-family: 'Playfair Display', serif;
-		font-size: 36px;
-		line-height: 44px;
-		text-align: center;
-		font-weight: 400;
-		display: block;
-		margin: 40px auto;
-		font-feature-settings: "liga", "dlig";
-		max-width: 42%;
-	}
-	.citation:before {
-		content: '';
-		width: 100px;
-		height: 4px;
-		display: block;
-		margin: 0 auto;
-	}
-	.citation:after {
-		background: var(--charcoal-grey);
-		content: '';
-		width: 100px;
-		height: 4px;
-		display: block;
-		margin: 0 auto;
-	}
-
-	@media (max-width: 64em) {
-	   .citation {
-			font-size: 30px;
-		}
-	}
-	@media (max-width: 50em) {
-	   .citation {
-			font-size: 30px;
-			max-width: unset;
-		}
-	}
-	@media (max-width: 30em) {
-	   .citation {
-			font-size: 26px;
-		}
 	}
 `;
 
@@ -79,11 +36,7 @@ export const NewsBody = () => {
 				{ columnComponents }
 			</div>
 
-			<div className="footer">
-				<span className="citation">
-					Confident, calm, driven, intuitive dev with an eye for UX/UI and a heart for people
-				</span>
-			</div>
+			<NewsFooter />
 		</ColumnsWrapper>
 	);
 }
