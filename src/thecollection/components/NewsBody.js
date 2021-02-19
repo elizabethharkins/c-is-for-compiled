@@ -64,19 +64,19 @@ const ColumnsWrapper = styled.div`
 export const NewsBody = () => {
 
 	const columnComponents = 
-		storyData.map(o => <Column key={o.id} 
-			heading={o.heading} 
-			subheading={o.subheading} 
-			description={o.description} 
-			live={o.live} 
-			github={o.github}/>
+		storyData.map(o => <Column key={ o.id } 
+			heading={ o.heading } 
+			subheading={ o.subheading } 
+			description={ o.description } 
+			live={ o.live } 
+			github={ o.github }/>
 		);
 
 	return (
 
 		<ColumnsWrapper>
 			<div className="columns">
-				{columnComponents}
+				{ columnComponents }
 			</div>
 
 			<div className="footer">
