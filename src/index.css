@@ -17,41 +17,20 @@
 	--dark-grey:#222;
 	--dark-accent-grey:#111;
 	--charcoal-grey:#2f2f2f;
-
 	--light-pastel-purple:#b19cd9;
 	--blue-magenta:#9921e8;
 	--med-light-yellow:#e5d54f;
 	--light-accent-blue:#eaedf0;
-
-	--accent-gradient:linear-gradient(315deg, #9921e8 0%, #000 74%);
 	/*rgba(50,45,127,255)*/
-	--cover-gradient:
-		radial-gradient(ellipse at bottom left, transparent, rgba(50,45,127,255)),
-        radial-gradient(ellipse at bottom left, transparent, rgba(50,45,127,255));
+
     --nav-gradient:
     	radial-gradient(at left bottom, rgba(50, 45, 127, 0.3), rgb(50, 45, 127)), 
     	radial-gradient(at left bottom, rgba(50, 45, 127, 0.3), rgb(50, 45, 127));
-	--collection-bg-gradient:
-		radial-gradient(ellipse at bottom left, transparent, #9921e8),
-        radial-gradient(ellipse at bottom left, transparent, #b19cd9);
-    --collection-bg-gradient-muted:
-		radial-gradient(ellipse at bottom left, transparent, rgba(153, 33, 232, 0.5)),
-        radial-gradient(ellipse at bottom left, transparent, rgba(177, 156, 217, 0.5));
+    --collection-bg-gradient:linear-gradient(
+    	72deg,var(--blue-magenta) -14%,rgba(0,0,0,0.2) 25%
+    );
 	--fill-area-bg-color:#000;
-	--main-area-bg-color:linear-gradient(
-	 	to bottom,
-	 	rgba(50, 45, 127, 1) 0%,
-	 	rgba(90, 45, 127, 1) 20%,
-	 	rgba(131, 47, 132, 1) 40%,
-	 	rgba(174, 57, 135, 1) 50%,
-	 	rgba(215, 68, 138, 1) 65%,
-	 	rgba(233, 64, 44, 1) 75%,
-	 	rgba(236, 95, 47, 1) 85%,
-	 	rgba(238, 124, 50, 1) 91%,
-	 	rgba(242, 163, 57, 1) 98%,
-	 	rgba(248, 204, 64, 1) 100%
-	);
-	--end-retro-stripe-gradient:linear-gradient(
+	--main-area-bg-gradient:linear-gradient(
 	 	to bottom,
 	 	rgba(50, 45, 127, 1) 0%,
 	 	rgba(90, 45, 127, 1) 60%,
@@ -68,7 +47,7 @@
 	--standard-column-border:1px solid var(--charcoal-grey);
 	--headline-padding:10px 0 10px 0;
 	--content-box-shadow:5px 5px 36px 5px #000;
-	--collection-gw-box-shadow:
+	--collection-cw-box-shadow:
 		0 2.8px 2.2px rgba(0, 0, 0, 0.034),
 		0 6.7px 5.3px rgba(0, 0, 0, 0.048),
 		0 12.5px 10px rgba(0, 0, 0, 0.06),

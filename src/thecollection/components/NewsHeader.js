@@ -18,6 +18,7 @@ const HeaderStyles = styled.div`
 		font-size: 8em;
 		line-height: 72px;
 		margin-bottom: 20px;
+		margin-top: 50px;
 		text-transform: uppercase;
 		width: 100%;
 	}
@@ -51,6 +52,15 @@ const HeaderStyles = styled.div`
 		font-style: italic;
 		padding: 11px;
 	}
+	.supplementary {
+		padding-left: 2%;
+	}
+	.supplementary > div {
+		border-bottom: var(--standard-column-border);
+	    border-top: var(--standard-column-border);
+	    padding: 12px 0 12px 0;
+	    text-align: center;
+	}
 	h2 {
 		display: flex;
 		justify-content: center;
@@ -58,7 +68,7 @@ const HeaderStyles = styled.div`
 		flex-flow: row wrap;
 		font-size: 4em;
 		transform: scaleY(1.8);
-		width: 60%;
+		width: 100%;
 	}
 
 	@media (max-width: 81.250em) {
@@ -71,7 +81,6 @@ const HeaderStyles = styled.div`
 		}
 		h2 {
 			font-size: 3.3em;
-			padding-left: 2%;
 		}
 	}
 	@media (min-width: 56.250em) and (max-width: 68.750em) {
@@ -80,7 +89,6 @@ const HeaderStyles = styled.div`
 		}
 		h2 {
 			font-size: 3.4em;
-			width: 66%;
 		}
 	}
 	@media (min-width: 37.5em) and (max-width: 64em) {
@@ -100,7 +108,6 @@ const HeaderStyles = styled.div`
 
 		h2	{
 			font-size: 2.8em;
-			width: 90%;
 		}
 	}
 	@media (max-width: 37.5em) {
@@ -119,7 +126,6 @@ const HeaderStyles = styled.div`
 
 		h2 {
 			font-size: 2.5em;
-			width: 100%;
 		}
 	}
 	@media (max-width: 30em) {
@@ -143,7 +149,6 @@ const HeaderStyles = styled.div`
 
 		h2 {
 			font-size: 1.3em;
-			width: 100%;
 		}
 	}
 `;
@@ -159,7 +164,10 @@ export const NewsHeader = () => {
 					<span className="emph">Bets</span>
 					<span>Styles</span>
 				</div>
-				<h2>Color. Line. Design.</h2>
+				<div className="supplementary">
+					<h2>Color. Line. Design.</h2>
+					<div>Richmond, VA - Friday, February 19, 2021</div>
+				</div>
 			</div>
 		</HeaderStyles>
 	);
