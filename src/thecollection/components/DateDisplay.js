@@ -18,7 +18,7 @@ export default class DateDisplay extends React.Component {
 
 	render() {
 		const { date } = this.state;
-
+		console.log(date.toString());
 		return (
 			<div>
 				Richmond, VA - { date }

@@ -15,6 +15,7 @@ const Footer = styled.footer`
 		max-width: 42%;
 	}
 	.citation:before {
+		background: var(--charcoal-grey);
 		content: '';
 		width: 100px;
 		height: 4px;

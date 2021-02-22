@@ -4,18 +4,18 @@ import React from "react";
 import styled from "styled-components";
 const ColumnStyles = styled.div`
 	font-size: 14px;
-    line-height: 20px;
-    width: 20%;
-    display: inline-block;
-    border-left: 1px solid #2f2f2f;
-    padding: 0 1% 0 1%;
-    vertical-align: top;
-    margin-bottom: 50px;
-    transition: all .7s;
+	line-height: 20px;
+	width: 20%;
+	display: inline-block;
+	border-left: 1px solid #2f2f2f;
+	padding: 0 1% 0 1%;
+	vertical-align: top;
+	margin-bottom: 50px;
+	transition: all .7s;
 	
 	&:hover {
 		border-radius: 0.125em;
-		box-shadow:var(--collection-gw-box-shadow);
+		box-shadow:var(--collection-cw-box-shadow);
 	}
 
 	.column-header {
@@ -83,15 +83,15 @@ const ColumnStyles = styled.div`
 
 	
 	@media (max-width: 1200px) {
-	    width: 33%;
+		width: 33%;
 	}
 	@media (max-width: 900px) {
-	    width: 50%;
+		width: 50%;
 	}
 	@media (max-width: 600px) {
-	    width: 100%;
-	    border-bottom: 1px solid #2f2f2f;
-	    border-left: none;
+		width: 100%;
+		border-bottom: 1px solid #2f2f2f;
+		border-left: none;
 	}
 
 `;

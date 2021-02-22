@@ -3,8 +3,10 @@
 import React from "react";
 import { NewsHeader } from "./components/NewsHeader";
 import { NewsBody } from "./components/NewsBody";
+import { NewsFooter } from "./components/NewsFooter"
+import { Weather } from "./components/Weather";
 import styled from "styled-components";
-const CollectionWrapper = styled.div`
+const NewsWrapper = styled.div`
 	background: var(--collection-bg-gradient);
 	transition: background 6s ease-in;
 	color: var(--dark-grey);
@@ -25,10 +27,12 @@ const CollectionWrapper = styled.div`
 
 export const TheCollection = () => {
 	return (
-		<CollectionWrapper>
+		<NewsWrapper>
 			<NewsHeader />
 			<NewsBody />
-		</CollectionWrapper>
+			<Weather />
+			<NewsFooter />
+		</NewsWrapper>
 	);
 }
 

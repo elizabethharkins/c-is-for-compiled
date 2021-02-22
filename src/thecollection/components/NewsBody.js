@@ -3,18 +3,13 @@
 import React from "react";
 import { Column } from "./Column";
 import { StoryData } from "../data/StoryData";
-import { NewsFooter } from "./NewsFooter"
 import styled from "styled-components";
 const ColumnsWrapper = styled.div`
 	font-size: 0;
-    line-height: 0;
-    word-spacing: -.31em;
-    display: inline-block;
-    margin: 30px 2% 0 2%;
-
-	.columns {
-		border-bottom: 10px solid var(--charcoal-grey);
-	}
+	line-height: 0;
+	word-spacing: -.31em;
+	display: inline-block;
+	margin: 30px 2% 0 2%;
 `;
 
 
@@ -35,8 +30,6 @@ export const NewsBody = () => {
 			<div className="columns">
 				{ columnComponents }
 			</div>
-
-			<NewsFooter />
 		</ColumnsWrapper>
 	);
 }
