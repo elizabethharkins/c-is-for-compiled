@@ -4,8 +4,15 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import styled from "styled-components";
 const CardStyles = styled.div`
-	p {}
 	.card {
+		background: transparent;
+		border-bottom: 5px solid rgba(0,0,0,.125);
+    	border-right: 5px solid rgba(0,0,0,.125);
+		color: #eaedf0;
+	}
+
+	.card-title {
+		margin-bottom: 0.125rem;
 	}
 `;
 
@@ -25,10 +32,9 @@ const WeatherCard = ({ dt, temp_min, temp_max, main, icon }) => {
 				<Card.Body>
 					<Card.Title>{ main }</Card.Title>
 						<p>
-							{ date.toLocaleDateString() } - { date.toLocaleTimeString() }
+							{ date.toLocaleTimeString([], {timeStyle: 'short'}) }
 						</p>
-						<p>Min: { temp_min }</p>
-						<p>Max: { temp_max }</p>
+						{/*<p>Temp: { temp_min } - { temp_max }</p>*/}
 				</Card.Body>
 			</Card>
 		</CardStyles>

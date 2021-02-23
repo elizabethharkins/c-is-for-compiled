@@ -12,7 +12,7 @@ const Footer = styled.footer`
 		display: block;
 		margin: 40px auto;
 		font-feature-settings: "liga", "dlig";
-		max-width: 42%;
+		max-width: 66%;
 	}
 	.citation:before {
 		background: var(--charcoal-grey);
@@ -20,7 +20,7 @@ const Footer = styled.footer`
 		width: 100px;
 		height: 4px;
 		display: block;
-		margin: 0 auto;
+		margin: 1% auto;
 	}
 	.citation:after {
 		background: var(--charcoal-grey);
@@ -28,7 +28,7 @@ const Footer = styled.footer`
 		width: 100px;
 		height: 4px;
 		display: block;
-		margin: 0 auto;
+		margin: 1% auto;
 	}
 
 	@media (max-width: 64em) {

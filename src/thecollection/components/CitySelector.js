@@ -8,6 +8,25 @@ const SelectorStyles = styled.div`
 		justify-content: center;
 	  	margin: 15px 0;
 	}
+
+	h1 {
+		font-size: 2rem;
+		font-style: italic;
+	}
+
+	input.form-control {
+		border-radius: 0.125em;
+		text-align: center;
+	}
+
+	.btn-primary {
+		background: var(--charcoal-grey);
+		border-color: #5d6063;
+		border-radius: 0.125em;
+	}
+	.btn-primary:hover {
+		background: var(--blue-magenta);
+	}
 `;
 
 const CitySelector = ({ onSearch }) => {

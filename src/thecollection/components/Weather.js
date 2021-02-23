@@ -8,12 +8,34 @@ import WeatherList from "./WeatherList";
 import styled from "styled-components";
 const WeatherStyles = styled.div`
 	border-bottom: 10px solid var(--charcoal-grey);
-	margin: 30px 2% 0 2%;
+	margin: 0 2% 0 2%;
+	text-align: center;
 
 	.weather-header {
 		display:flex;
 		flex-direction: column;
-		min-height: 10vh;
+	}
+	.weather-header h1 {
+		border-bottom: var(--standard-column-border);
+    	border-top: var(--standard-column-border);
+	}
+
+	.weather-body {
+		background: var(--collection-bg-gradient);
+		border-radius: 0.125em;
+	    margin: 1em auto;
+	    padding: 1%;
+	}
+	.weather-body > .row {
+		margin: 0.125em;
+		padding: 0;
+	}
+	.weather-body > .row > .col {
+		padding: 1%;
+	}
+
+	.fineprint {
+		margin-top: 1rem;
 	}
 
 	footer {
@@ -25,13 +47,8 @@ const WeatherStyles = styled.div`
 		font-size: small;
 		text-align: center;
 	}
-	header {
-		padding: 25px;
-	}
 
-	.weather-body {
-		text-align: center;
-	}
+
 `;
 
 export const Weather = () => {
@@ -52,7 +69,7 @@ export const Weather = () => {
 	return (
 		<WeatherStyles>
 			<header className="weather-header">
-				<h1>Cloudy With a Chance of Meatballs</h1>
+				<h1>Your Local Weather</h1>
 			</header>
 			<div className="weather-body">
 				<CitySelector 
@@ -62,10 +79,11 @@ export const Weather = () => {
 				{/* conditionally render  */}
       			{/*{ data && <WeatherList weathers={data.list} /> }*/}
       			{getContent()}
+
+      			<p className="fineprint">
+					Weather by OpenWeather API
+				</p>
 			</div>
-			<footer>
-				Weather by the Internet
-			</footer>
 		</WeatherStyles>
 	);
 }
