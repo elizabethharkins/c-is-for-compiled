@@ -1,7 +1,9 @@
 
 
 import React from "react";
-import WeatherCard from "./WeatherCard";
+// import WeatherCard from "./WeatherCard";
+import CitySelector from "./CitySelector";
+import { Container } from "react-bootstrap";
 import styled from "styled-components";
 const WeatherStyles = styled.div`
 	border-bottom: 10px solid var(--charcoal-grey);
@@ -29,6 +31,10 @@ const WeatherStyles = styled.div`
 	header {
 		padding: 25px;
 	}
+
+	.weather-body {
+		text-align: center;
+	}
 `;
 
 export const Weather = () => {
@@ -37,13 +43,9 @@ export const Weather = () => {
 			<header className="weather-header">
 				<h1>Cloudy With a Chance of Meatballs</h1>
 			</header>
-			<WeatherCard
-				dt={ 1602104400 * 1000 }
-				temp_min="22.67"
-				temp_max="24.39"
-				main="Clear"
-				icon="01d"
-			/>
+			<Container className="weather-body">
+      			<CitySelector />
+    		</Container>
 			<footer>
 				Weather by the Internet
 			</footer>
