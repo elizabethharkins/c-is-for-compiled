@@ -2,7 +2,6 @@
 
 import React from "react";
 import CitySelector from "./CitySelector";
-import { Container } from "react-bootstrap";
 import UseFetch from "../hooks/UseFetch";
 import WeatherList from "./WeatherList";
 import styled from "styled-components";

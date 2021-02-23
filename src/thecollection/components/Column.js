@@ -62,6 +62,10 @@ const ColumnStyles = styled.div`
 		margin: 1rem;
 		text-align: left;
 	}
+	.newscontent.accented {
+		font-style: italic;
+		text-align: center;
+	}
 
 	.links {
 		display: flex;
@@ -81,7 +85,22 @@ const ColumnStyles = styled.div`
 		text-decoration: underline;
 	}
 
-	
+	ul.horizontal {
+		display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    flex-direction: row;
+	    flex-wrap: wrap;
+	}
+	ul.horizontal li { 
+		list-style-type:disc;
+		text-indent:-4px; 
+		margin-right:20px;
+	}
+	ul.horizontal li:nth-child(1) {
+   		list-style-type: none; 
+	}
+
 	@media (max-width: 1200px) {
 		width: 33%;
 	}
@@ -106,12 +125,18 @@ export const Column = (props) => {
 					<span className="headline subheading">{ props.subheading }</span>
 				</p>
 			</div>
-			<p className="newscontent">
+			<p className="newscontent accented">
 				{ props.description }
-				<span className="links">
-					<a href={ props.live }>Live</a> - <a href={ props.github }>GitHub</a>
+			</p>
+				<p className="newscontent">
+				{ props.descriptionExt }
+				<span className="links" style={{ display: !props.live && "none" }}>
+					<a href={ props.live }>Live</a> <span style={{ display: !props.github && "none" }}>-</span> <a href={ props.github } style={{ display: !props.github && "none" }}>GitHub</a>
 				</span>
 			</p>
+			<ul className="horizontal">
+				{ props.list }
+			</ul>
 		</ColumnStyles>
 	);
 }

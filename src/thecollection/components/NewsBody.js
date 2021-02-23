@@ -20,8 +20,11 @@ export const NewsBody = () => {
 			heading={ o.heading } 
 			subheading={ o.subheading } 
 			description={ o.description } 
+			descriptionExt={ o.descriptionExt } 
 			live={ o.live } 
-			github={ o.github }/>
+			github={ o.github }
+			list={ (o.list.map(item => (<li key={ item }>{ item }</li>))) } 
+			/>
 		);
 
 	return (
