@@ -131,7 +131,7 @@ export const Column = (props) => {
 				<p className="newscontent">
 				{ props.descriptionExt }
 				<span className="links" style={{ display: !props.live && "none" }}>
-					<a href={ props.live }>Live</a> <span style={{ display: !props.github && "none" }}>-</span> <a href={ props.github } style={{ display: !props.github && "none" }}>GitHub</a>
+					<a href={ props.live } target="_blank" rel="noreferrer">Live</a> <span style={{ display: !props.github && "none" }}>-</span> <a href={ props.github } target="_blank" rel="noreferrer" style={{ display: !props.github && "none" }}>GitHub</a>
 				</span>
 			</p>
 			<ul className="horizontal">
