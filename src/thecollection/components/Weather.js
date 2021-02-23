@@ -44,6 +44,22 @@ export const Weather = () => {
 	const { data, error, isLoading, setUrl } = UseFetch();
 	console.log(data);
 
+	// error handling and loading
+  	const getContent = () => {
+		if (error) {
+			return <h2>Error when fetching: {error}</h2>
+		}
+		else if (!data && isLoading) { 
+			return <h2>LOADING...</h2>
+		}
+		else if (!data) { 
+			return null;
+		}
+		else {
+			return <WeatherList weathers={data.list} />
+		}
+  	};
+
 	return (
 		<WeatherStyles>
 			<header className="weather-header">
@@ -52,8 +68,9 @@ export const Weather = () => {
 			<Container className="weather-body">
 				<CitySelector onSearch={ (city) => setUrl(`${process.env.REACT_APP_API_BASE_URL}/data/2.5/forecast?q=${city}&appid=${process.env.REACT_APP_API_KEY}`) } />
 			
-				{/* conditionally render */}
-				{ data && <WeatherList weathers={ data.list } />}
+				{/* conditionally render  */}
+      			{/*{ data && <WeatherList weathers={data.list} /> }*/}
+      			{getContent()}
 			</Container>
 			<footer>
 				Weather by the Internet

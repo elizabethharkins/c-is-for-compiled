@@ -14,7 +14,7 @@ const WeatherCard = ({ dt, temp_min, temp_max, main, icon }) => {
 
 	// create a date object with Date class constructor
 	const date = new Date(dt);
-	console.log(date);
+	// console.log(date);
 
 	return (
 		<CardStyles>
