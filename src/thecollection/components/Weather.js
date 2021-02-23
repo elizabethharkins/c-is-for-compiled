@@ -4,6 +4,7 @@ import React from "react";
 // import WeatherCard from "./WeatherCard";
 import CitySelector from "./CitySelector";
 import { Container } from "react-bootstrap";
+import UseFetch from "../hooks/UseFetch";
 import styled from "styled-components";
 const WeatherStyles = styled.div`
 	border-bottom: 10px solid var(--charcoal-grey);
@@ -38,13 +39,17 @@ const WeatherStyles = styled.div`
 `;
 
 export const Weather = () => {
+
+	// destructure the returned values
+	const { data, error, isLoading, setUrl } = UseFetch();
+
 	return (
 		<WeatherStyles>
 			<header className="weather-header">
 				<h1>Cloudy With a Chance of Meatballs</h1>
 			</header>
 			<Container className="weather-body">
-      			<CitySelector />
+      			<CitySelector onSearch={ (city) => setUrl(`${process.env.REACT_APP_API_BASE_URL}/data/2.5/forecast?q=${city}&appid=${process.env.REACT_APP_API_KEY}`) } />
     		</Container>
 			<footer>
 				Weather by the Internet
