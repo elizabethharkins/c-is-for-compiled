@@ -16,11 +16,10 @@ const CardStyles = styled.div`
 	}
 `;
 
-const WeatherCard = ({ dt, temp_min, temp_max, main, icon }) => {
+const WeatherCard = ({ dt, main, icon }) => {
 
 	// create a date object with Date class constructor
 	const date = new Date(dt);
-	// console.log(date);
 
 	return (
 		<CardStyles>
@@ -32,9 +31,8 @@ const WeatherCard = ({ dt, temp_min, temp_max, main, icon }) => {
 				<Card.Body>
 					<Card.Title>{ main }</Card.Title>
 						<p>
-							{ date.toLocaleTimeString([], {timeStyle: 'short'}) }
+							{ date.toLocaleTimeString([], {timeStyle: "short"}) }
 						</p>
-						{/*<p>Temp: { temp_min } - { temp_max }</p>*/}
 				</Card.Body>
 			</Card>
 		</CardStyles>

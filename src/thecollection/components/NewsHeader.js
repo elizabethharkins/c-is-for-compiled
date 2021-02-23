@@ -22,6 +22,7 @@ const HeaderStyles = styled.div`
 		text-transform: uppercase;
 		width: 100%;
 	}
+
 	.subheading {
 		border-top: 10px solid var(--charcoal-grey);
 		display: flex;
@@ -32,6 +33,7 @@ const HeaderStyles = styled.div`
 		width: 100%;
 		padding: 2em 0 0 0;
 	}
+
 	.tag {
 		border: 5px solid var(--charcoal-grey);
 		display: flex;
@@ -52,6 +54,7 @@ const HeaderStyles = styled.div`
 		font-style: italic;
 		padding: 11px;
 	}
+
 	.supplementary {
 		padding-left: 2%;
 	}
@@ -75,10 +78,12 @@ const HeaderStyles = styled.div`
 		h1	{
 			font-size: 7em;
 		}
+
 		.subheading	{
 			padding: 2em 0 0 0;
 			width: 95%;
 		}
+
 		h2 {
 			font-size: 3.3em;
 		}
@@ -87,6 +92,7 @@ const HeaderStyles = styled.div`
 		h1	{
 			font-size: 5.5em;
 		}
+
 		h2 {
 			font-size: 3.4em;
 		}
@@ -96,11 +102,13 @@ const HeaderStyles = styled.div`
 			font-size: 3.9em;
 			margin-bottom: 10px;
 		}
+
 		.subheading	{
 			justify-content: flex-start;
 			flex-flow: column wrap;
 			padding: 12px 0 12px 0;
 		}
+
 		.tag  {
 			margin-bottom: 3%;
 			width: 90%;
@@ -116,9 +124,11 @@ const HeaderStyles = styled.div`
 			margin-bottom: 10px;
 			text-align: center;
 		}
+
 		.subheading {
 			padding: 12px 0 12px 0;
 		}
+
 		.tag {
 			margin-bottom: 3%;
 			width: 90%;
@@ -135,9 +145,11 @@ const HeaderStyles = styled.div`
 			margin-bottom: 3px;
 			text-align: center;
 		}
+
 		.subheading {
 			padding: 12px 0 12px 0;
 		}
+		
 		.tag {
 			padding: 8px 15px 8px 15px;
 			width: 90%;

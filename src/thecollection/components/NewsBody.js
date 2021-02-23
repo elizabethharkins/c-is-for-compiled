@@ -16,14 +16,15 @@ const ColumnsWrapper = styled.div`
 export const NewsBody = () => {
 
 	const columnComponents = 
-		StoryData.map(o => <Column key={ o.id } 
-			heading={ o.heading } 
-			subheading={ o.subheading } 
-			description={ o.description } 
-			descriptionExt={ o.descriptionExt } 
-			live={ o.live } 
-			github={ o.github }
-			list={ (o.list.map(item => (<li key={ item }>{ item }</li>))) } 
+		StoryData.map(o => 
+			<Column key={ o.id } 
+				heading={ o.heading } 
+				subheading={ o.subheading } 
+				description={ o.description } 
+				descriptionExt={ o.descriptionExt } 
+				live={ o.live } 
+				github={ o.github }
+				list={ (o.list.map(item => (<li key={ item }>{ item }</li>))) } 
 			/>
 		);
 

@@ -44,7 +44,7 @@ const CitySelector = ({ onSearch }) => {
 				<Col xs={ 4 } className="text-center">
 			  		<FormControl
 						placeholder="Enter city"
-						onChange={ (e) => setCity(e.target.value) }
+						onChange={ e => setCity(e.target.value) }
 						value={ city }
 			  		/>
 				</Col>

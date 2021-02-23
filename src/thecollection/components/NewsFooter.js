@@ -5,7 +5,7 @@ import styled from "styled-components";
 const Footer = styled.footer`
 	.citation {
 		font-family: 'Playfair Display', serif;
-		font-size: 36px;
+		font-size: 2.250em;
 		line-height: 44px;
 		text-align: center;
 		font-weight: 400;
@@ -33,18 +33,17 @@ const Footer = styled.footer`
 
 	@media (max-width: 64em) {
 	   .citation {
-			font-size: 30px;
+			font-size: 1.875em;
 		}
 	}
 	@media (max-width: 50em) {
 	   .citation {
-			font-size: 30px;
 			max-width: unset;
 		}
 	}
 	@media (max-width: 30em) {
 	   .citation {
-			font-size: 26px;
+			font-size: 1.525em
 		}
 	}
 `;

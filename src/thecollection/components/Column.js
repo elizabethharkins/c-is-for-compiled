@@ -109,7 +109,7 @@ const ColumnStyles = styled.div`
 	}
 	@media (max-width: 600px) {
 		width: 100%;
-		border-bottom: 1px solid #2f2f2f;
+		border-bottom: var(--standard-column-border);
 		border-left: none;
 	}
 
@@ -131,7 +131,9 @@ export const Column = (props) => {
 				<p className="newscontent">
 				{ props.descriptionExt }
 				<span className="links" style={{ display: !props.live && "none" }}>
-					<a href={ props.live } target="_blank" rel="noreferrer">Live</a> <span style={{ display: !props.github && "none" }}>-</span> <a href={ props.github } target="_blank" rel="noreferrer" style={{ display: !props.github && "none" }}>GitHub</a>
+					<a href={ props.live } target="_blank" rel="noreferrer">Live</a> 
+						<span style={{ display: !props.github && "none" }}>-</span> 
+					<a href={ props.github } target="_blank" rel="noreferrer" style={{ display: !props.github && "none" }}>GitHub</a>
 				</span>
 			</p>
 			<ul className="horizontal">
