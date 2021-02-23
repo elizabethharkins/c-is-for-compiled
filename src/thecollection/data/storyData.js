@@ -46,8 +46,8 @@ export const StoryData = [
         subheading: "CSS Grid",
         description: "For the love of the Grid",
         descriptionExt: "Stained [glass] grids, plus a realty business card; explorations into making the web more beautiful.",
-        live: "", 
-        github: "",
+        live: "https://github.com/elizabethharkins/grid-layout-collective", 
+        github: "https://github.com/elizabethharkins/grid-layout-collective",
         list: [ "HTML5", "CSS Grid" ],
     }
 ];
