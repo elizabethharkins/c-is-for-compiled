@@ -8,6 +8,7 @@ import WeatherList from "./WeatherList";
 import styled from "styled-components";
 const WeatherStyles = styled.div`
 	border-bottom: 10px solid var(--charcoal-grey);
+	margin: 30px 2% 0 2%;
 
 	.weather-header {
 		display:flex;
@@ -15,11 +16,6 @@ const WeatherStyles = styled.div`
 		min-height: 10vh;
 	}
 
-	.main {
-		flex-grow: 1;
-		text-align: center;
-		padding: 25px;
-	}
 	footer {
 		padding: 2px;
 		min-height: 100px;
@@ -46,32 +42,27 @@ export const Weather = () => {
 
 	// error handling and loading
   	const getContent = () => {
-		if (error) {
-			return <h2>Error when fetching: {error}</h2>
-		}
-		else if (!data && isLoading) { 
-			return <h2>LOADING...</h2>
-		}
-		else if (!data) { 
-			return null;
-		}
-		else {
-			return <WeatherList weathers={data.list} />
-		}
-  	};
+	    if (error) return <h2>Error when fetching: { error }</h2>
+	    if (!data && isLoading) return <h2>LOADING...</h2>
+	    if (!data) return null;
+	    return <WeatherList weathers={ data.list.slice(0, 8) } />
+	};
+
 
 	return (
 		<WeatherStyles>
 			<header className="weather-header">
 				<h1>Cloudy With a Chance of Meatballs</h1>
 			</header>
-			<Container className="weather-body">
-				<CitySelector onSearch={ (city) => setUrl(`${process.env.REACT_APP_API_BASE_URL}/data/2.5/forecast?q=${city}&appid=${process.env.REACT_APP_API_KEY}`) } />
+			<div className="weather-body">
+				<CitySelector 
+					onSearch={ (city) => setUrl(`${process.env.REACT_APP_API_BASE_URL}/data/2.5/forecast?q=${city}&appid=${process.env.REACT_APP_API_KEY}&units=imperial`) } 
+				/>
 			
 				{/* conditionally render  */}
       			{/*{ data && <WeatherList weathers={data.list} /> }*/}
       			{getContent()}
-			</Container>
+			</div>
 			<footer>
 				Weather by the Internet
 			</footer>

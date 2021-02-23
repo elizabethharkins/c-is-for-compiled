@@ -6,7 +6,6 @@ import styled from "styled-components";
 const CardStyles = styled.div`
 	p {}
 	.card {
-		width: 18rem;
 	}
 `;
 
