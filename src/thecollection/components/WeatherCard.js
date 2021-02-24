@@ -14,6 +14,15 @@ const CardStyles = styled.div`
 	.card-title {
 		margin-bottom: 0.125rem;
 	}
+
+	@media (max-width: 30em) {
+		.card {
+			border-bottom: unset
+	    	border-right: unset
+	    	border: 3px solid rgba(0,0,0,.125);
+		}
+	}
+
 `;
 
 const WeatherCard = ({ dt, main, icon }) => {

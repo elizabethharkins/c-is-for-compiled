@@ -37,6 +37,19 @@ const WeatherStyles = styled.div`
 		padding: 2px;
 	}
 
+	@media (max-width: 70em) {
+		.weather-body > .row > .col {
+			flex-basis: unset;
+    		flex-grow: unset;
+    		max-width: 25%;
+		}
+	}
+	@media (max-width: 37.5em) {
+		.weather-body > .row > .col {
+			max-width: 50%;
+		}
+	}	
+
 `;
 
 export const Weather = () => {

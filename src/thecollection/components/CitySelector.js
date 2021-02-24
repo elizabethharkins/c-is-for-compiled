@@ -17,15 +17,17 @@ const SelectorStyles = styled.div`
 	input.form-control {
 		border-radius: 0.125em;
 		text-align: center;
+		max-width: 35em;
+    	margin: 0 auto;
 	}
 
 	.btn-primary {
-		background: var(--charcoal-grey);
+		background-color: var(--charcoal-grey);
 		border-color: #5d6063;
 		border-radius: 0.125em;
 	}
 	.btn-primary:hover {
-		background: var(--blue-magenta);
+		background-color: var(--blue-magenta);
 	}
 `;
 
@@ -41,7 +43,7 @@ const CitySelector = ({ onSearch }) => {
 		  	</Row>
 
 		  	<Row>
-				<Col xs={ 4 } className="text-center">
+				<Col xs={ 8 } className="text-center">
 			  		<FormControl
 						placeholder="Enter city"
 						onChange={ e => setCity(e.target.value) }
