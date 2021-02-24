@@ -49,6 +49,11 @@ const WeatherStyles = styled.div`
 			max-width: 50%;
 		}
 	}	
+	@media (max-width: 30em) {
+		.weather-header h1 {
+			font-size: 2em;
+		}
+	}
 
 `;
 

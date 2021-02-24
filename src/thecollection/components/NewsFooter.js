@@ -13,6 +13,7 @@ const Footer = styled.footer`
 		margin: 40px auto;
 		font-feature-settings: "liga", "dlig";
 		max-width: 66%;
+		padding: 2%;
 	}
 	.citation:before {
 		background: var(--charcoal-grey);
@@ -43,7 +44,7 @@ const Footer = styled.footer`
 	}
 	@media (max-width: 30em) {
 	   .citation {
-			font-size: 1.525em
+			font-size: 1.525em;
 		}
 	}
 `;
