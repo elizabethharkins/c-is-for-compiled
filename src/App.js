@@ -5,7 +5,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { NavigationBar } from "./components/NavigationBar";
 import { Home } from "./Home";
-import { About } from "./about/About";
+import About from "./about/About";
 import { TheCollection } from "./thecollection/TheCollection";
 
 
