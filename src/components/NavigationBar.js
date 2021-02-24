@@ -3,8 +3,6 @@
 import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import styled from "styled-components";
-
-
 const NavStyles = styled.div`
 	font-family: 'Droid Serif', serif;
 	font-size: 1.1em;

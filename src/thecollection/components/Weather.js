@@ -67,6 +67,7 @@ export const Weather = () => {
 	    if (error) return <h2>Check your entry: { error }</h2>
 	    if (!data && isLoading) return <h2>Loading...</h2>
 	    if (!data) return null;
+		// console.log(data);
 	    return <WeatherList data={ data.list.slice(0, 8) } />
 	};
 

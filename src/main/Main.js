@@ -1,7 +1,139 @@
 
 
 import React from "react";
-import "./Main.css";
+import styled from "styled-components";
+const MainPageStyles = styled.div`
+.fill-area  {
+	bottom: -72px;
+	background: var(--fill-area-bg-color);
+	box-shadow: inset 3px 3px 5px -1px #111;
+	pointer-events: none;
+	position:fixed;
+	padding:0;
+	margin:0;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	transition: all 1s ease; 
+	z-index: 2;
+}
+
+main {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	background: var(--main-area-bg-gradient);
+}
+
+.content {
+	color: var(--light-accent-blue);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	font-family: 'Droid Serif', serif;
+	font-size: 1.3em;
+	margin: 0 auto;
+	height: 200px;
+	width: 45%;
+	z-index: 2;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.slidecontainer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-flow: column;
+	margin: 10vh auto;
+	width: 80%;
+	z-index: 2;
+}
+
+label {
+	position: static;
+	z-index: 1;
+	font: 8rem "Monoton", sans-serif;
+	color: purple;
+	margin: -5rem 0 2rem;
+}
+label::after {
+  content: "%";
+}
+
+.slider {
+	position: static;
+	z-index: 2;
+	width: 50vw;
+	height: 1rem;
+	background-color: purple;
+	-webkit-appearance: none; 
+	appearance: none;
+	border: none;
+	outline: none;
+	border-radius: 100vmax;
+	box-shadow: inset 3px 3px 5px -1px #000;
+}
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 4vw;
+	height: 4vw;
+	background: var(--light-accent-blue);
+	border-radius: 50%;
+	cursor: pointer;
+	box-shadow: 5px 5px 8px -1px #000;
+	transition: box-shadow .3s ease-in-out;
+}
+.slider::-moz-range-thumb {
+	appearance: none;
+	width: 4vw;
+	height: 4vw;
+	background: var(--light-accent-blue);
+	border-radius: 50%;
+	cursor: pointer;
+	box-shadow: 5px 5px 8px -1px #000;
+	transition: box-shadow .3s ease-in-out;
+}
+
+@media screen and (max-width: 52em) {
+	.content {
+		height: 100px;
+		width: 85%;
+	}
+
+	label {
+		font: 4rem "Monoton", sans-serif;
+		margin: -2rem 0 1rem;
+	}
+	.slider {
+		width: 85vw;
+	}
+}
+
+@media screen and (max-width: 33.250em) {
+	.content {
+		margin: 1em auto 0 auto;
+	}
+	.slidecontainer {
+		margin: 3vh auto;
+	}
+
+	label {
+		margin: 2rem 0 2rem;
+	}
+
+	.slider::-webkit-slider-thumb {
+		width: 8vw;
+		height: 8vw;
+	}
+}
+`;
 
 
 export default class Main extends React.Component {
@@ -47,24 +179,24 @@ export default class Main extends React.Component {
 		const { rangeValues, currentRangeValue, currentStoryValue } = this.state;
 
 		return (
-			<div className="page">
+			<MainPageStyles className="page">
 				<div className="effects-container">
 					<div className="fill-area"></div>
 					<main>
-						<p className="content"><span id="output">{[currentStoryValue]}</span></p>
+						<p className="content"><span id="output">{ [currentStoryValue] }</span></p>
 						<div className="slidecontainer">
-							<label id="range-value" htmlFor="range">{rangeValues[currentRangeValue]}</label>
+							<label id="range-value" htmlFor="range">{ rangeValues[currentRangeValue] }</label>
 							<input 
-								onChange={this.handleInputChange}
-								type={"range"} 
-								name={"range"} 
-								min={0} 
-								max={4} 
-								defaultValue={0} 
-								className={"slider"} 
-								id={"myStory"}
-								step={1}
-								list={"tick-list"}
+								onChange={ this.handleInputChange }
+								type={ "range" } 
+								name={ "range" } 
+								min={ 0 } 
+								max={ 4 } 
+								defaultValue={ 0 } 
+								className={ "slider" } 
+								id={ "myStory" }
+								step={ 1 }
+								list={ "tick-list" }
 							/>
 							<datalist id="tick-list">
 								<option>0</option>
@@ -76,7 +208,7 @@ export default class Main extends React.Component {
 						</div>
 					</main>
 				</div>
-			</div>
+			</MainPageStyles>
 
 		);
 
