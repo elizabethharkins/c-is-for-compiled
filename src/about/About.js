@@ -4,6 +4,7 @@ import React from "react";
 import Typewriter from "./Typewriter";
 import { Title } from "./components/Title";
 import { Quote } from "./components/Quote";
+import { Invite } from "./components/Invite";
 import "./About.css";
 
 
@@ -25,9 +26,7 @@ export const About = () => {
 			<Quote />
 			<div className="sunimage"></div>
 			<div className="drawing"></div>
-			<a href="mailto:lizharkins@gmail.com?Subject=Hi, Liz!" target="_top" className="invite aboutemph">
-				Electronic mail me!
-			</a>
+			<Invite />
 		</div>
 	);
 
