@@ -57,6 +57,7 @@ const HeaderStyles = styled.div`
 
 	.supplementary {
 		padding-left: 2%;
+		min-width: 55%;
 	}
 	.supplementary > div {
 		border-bottom: var(--standard-column-border);
@@ -69,7 +70,7 @@ const HeaderStyles = styled.div`
 		justify-content: center;
 		align-items: center;
 		flex-flow: row wrap;
-		font-size: 3.8em;
+		font-size: 4em;
 		transform: scaleY(1.8);
 		width: 100%;
 	}
