@@ -69,7 +69,7 @@ const HeaderStyles = styled.div`
 		justify-content: center;
 		align-items: center;
 		flex-flow: row wrap;
-		font-size: 4em;
+		font-size: 3.8em;
 		transform: scaleY(1.8);
 		width: 100%;
 	}
