@@ -1,6 +1,7 @@
 
 
 import React from "react";
+import Typewriter from "./Typewriter";
 import styled from "styled-components";
 const QuoteStyles = styled.div`
 	align-self: end;
@@ -37,7 +38,7 @@ export const Quote = () => {
 
 	return (
 		<QuoteStyles>
-			A ship in harbor is safe - but that is not what ships are built for.
+			<Typewriter inputStrings={["A ship in harbor is safe - but that is not what ships are built for."]} />
 		</QuoteStyles>
 	);
 	

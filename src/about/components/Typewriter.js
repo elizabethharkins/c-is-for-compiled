@@ -5,7 +5,7 @@ import React from "react";
 export default class Typewriter extends React.Component {
 	state = {
 		typeColor: {
-			color: "var(--dark-grey)",
+			color: "var(--grey)",
 		},
 		typed: ""
 	};
@@ -36,17 +36,17 @@ export default class Typewriter extends React.Component {
 	}
 
 	stringChecker(string, words) {
-		if (string) {
-			this.setState({ typeColor: { color: "var(--dark-grey)" } });
+		if (string === "Hello") {
+			this.setState({ typeColor: { color: "var(--grey)" } });
 		}
 		else {
-			this.setState({ typeColor: { color: "orange" } });
+			this.setState({ typeColor: { color: "var(--med-light-yellow" } });
 		}
 		this.typeWriter(string, words);
 	}
 
 	render() {
-		return <p style={ this.state.typeColor }>{ this.state.typed }</p>;
+		return <div style={ this.state.typeColor }>{ this.state.typed }</div>;
 	}
 }
 

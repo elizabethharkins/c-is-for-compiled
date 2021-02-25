@@ -1,6 +1,7 @@
 
 
 import React from "react";
+import Typewriter from "./Typewriter";
 import styled from "styled-components";
 const TitleStyles = styled.div`
 	align-items: end;
@@ -31,7 +32,7 @@ export const Title = () => {
 
 	return (
 		<TitleStyles>
-			Hello
+			<Typewriter inputStrings={["Hello"]} />
 		</TitleStyles>
 	);
 	
