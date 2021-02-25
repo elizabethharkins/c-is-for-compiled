@@ -6,11 +6,14 @@ import styled from "styled-components";
 const NavStyles = styled.div`
 	font-family: 'Droid Serif', serif;
 	font-size: 1.1em;
-
+	
 	.navbar { 
+		box-shadow: 0 5px 20px -10px #000;
 		padding: 0.25rem 1rem 0.25rem 1rem;
 		top: 0;
 		width: 100vw;
+		background: var(--nav-gradient);
+		border-bottom: 1px solid var(--blue-magenta);
 	}
 	a, .navbar-nav, .navbar-light .nav-link {
 		color: var(--light-accent-blue);
@@ -21,7 +24,6 @@ const NavStyles = styled.div`
 		z-index: 9999;
 		color: var(--light-accent-blue) !important;
 		cursor: pointer;
-		text-decoration: underline;
 		&:hover { color: white; }
 	}
 	.navbar-light .navbar-toggler {
@@ -45,14 +47,14 @@ const NavStyles = styled.div`
 export const NavigationBar = () => {
 
 	let styles = {
-		background: "var(--nav-gradient)",
-		borderBottom: "1px solid var(--blue-magenta)",
+		color: "var(--light-pastel-purple)",
+		fontFamily: "'Barriecito', cursive",
 	}
 
 	return (
 		<NavStyles>
-			<Navbar expand="lg" style={styles}>
-				<Navbar.Brand href="/">Liz Harkins</Navbar.Brand>
+			<Navbar expand="lg">
+				<Navbar.Brand href="/">L<span style={styles}>;</span>z Hark<span style={styles}>;</span>ns</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Nav className="ml-auto">
