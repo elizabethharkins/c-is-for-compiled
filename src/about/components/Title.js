@@ -32,7 +32,7 @@ export const Title = () => {
 
 	return (
 		<TitleStyles>
-			<Typewriter inputStrings={["Hello"]} />
+			<Typewriter inputStrings={["Welcome"]} />
 		</TitleStyles>
 	);
 	
