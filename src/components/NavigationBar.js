@@ -36,7 +36,15 @@ const NavStyles = styled.div`
 	.nav-item {
 		text-align: center;
 		transition: all .6s ease;
-		&:hover { background: var(--light-pastel-purple); border-radius: 1.125em; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+		&:hover { 
+			background: var(--nav-gradient-muted); 
+			text-decoration: underline;
+			box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+		}
+	}
+	.nav-link {
+		padding-right: .8rem;
+    	padding-left: .8rem;
 	}
 	
 `;
