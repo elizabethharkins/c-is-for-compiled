@@ -54,7 +54,7 @@ export const NavigationBar = () => {
 	return (
 		<NavStyles>
 			<Navbar expand="lg">
-				<Navbar.Brand href="/">L<span style={styles}>;</span>z Harkins</Navbar.Brand>
+				<Navbar.Brand href="/">L<span style={ styles }>;</span>z Harkins</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Nav className="ml-auto">

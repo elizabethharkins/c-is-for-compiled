@@ -2,6 +2,7 @@
 
 import React from "react";
 import Typewriter from "./Typewriter";
+import { Quote } from "./components/Quote";
 import "./About.css";
 
 
@@ -20,7 +21,7 @@ export const About = () => {
 				<p>Happiness is ... GT Cinetype, baking, Art Deco, mint-chip gelato, traveling, art direction, Bowie, retro, record-collecting, JavaScripting
 				</p>
 			</div>
-			<div className="quote">A ship in harbor is safe - but that is not what ships are built for.</div>
+			<Quote />
 			<div className="sunimage"></div>
 			<div className="drawing"></div>
 			<a href="mailto:lizharkins@gmail.com?Subject=Hi, Liz!" target="_top" className="invite aboutemph">
@@ -28,6 +29,6 @@ export const About = () => {
 			</a>
 		</div>
 	);
-	
+
 }
 

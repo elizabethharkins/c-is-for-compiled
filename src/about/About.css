@@ -1,6 +1,6 @@
 
 
-/* general/zine setup */
+/* zine */
 .magazine {
 	background: #e5e5e5;
 	display: grid;
@@ -46,7 +46,7 @@
 }
 
 .drawing {
-	background-image: url(img/mebygv.png);
+	background-image: url(./img/mebygv.png);
 	background-position: bottom;
 	background-repeat: no-repeat;
 	background-size: 125%;
@@ -55,26 +55,6 @@
 	margin: 0;
 	padding: 0;
 	z-index: 2;
-}
-
-/* quote */
-.quote {
-	align-self: end;
-	background: rgba(0,0,0,0.5);
-	border-left: 10px solid var(--med-light-yellow);
-	bottom: 8%;
-	color: var(--med-light-yellow);
-	/*font-size: calc(12px + 1.1vw);*/
-	font-family: 'Droid Serif', serif;
-	font-size: 1.5em;
-	grid-row: 2;
-	grid-column: 4;
-	justify-content: start;
-	padding: 10px;
-	position: relative;
-	right: 125px;
-	text-transform: uppercase;
-	z-index: 3;
 }
 
 /* content */
@@ -169,10 +149,6 @@
 
 /* @media */
 @media only screen and (min-width: 240px) and (max-width: 479px) {
-	.quote {
-		left: 50px;
-	}
-
 	.drawing {
 		background-size: 125%;
 	}
@@ -196,15 +172,6 @@
 		grid-row: 2;
 		grid-column: 1;
 		margin: 0;
-	}
-
-	.quote {
-		bottom: 11%;
-		font-size: calc(12px + 2.3vw);
-		grid-row: 2;
-		grid-column: 1;
-		left: 75px;
-		width: 66%;
 	}
 
 	.content1 h1, 
