@@ -24,8 +24,8 @@
 	/*rgba(50,45,127,255)*/
 
     --nav-gradient:
-    	radial-gradient(at left bottom, rgba(50, 45, 127, 0.3), rgb(50, 45, 127)), 
-    	radial-gradient(at left bottom, rgba(50, 45, 127, 0.3), rgb(50, 45, 127));
+    	radial-gradient(at left bottom, rgba(50, 45, 127, 0.2), rgb(50, 45, 127)), 
+    	radial-gradient(at left bottom, rgba(50, 45, 127, 0.2), rgb(50, 45, 127));
     --nav-gradient-muted:rgba(255,255,255,0.1);
     --collection-bg-gradient:linear-gradient(
     	72deg,var(--blue-magenta) -14%,rgba(0,0,0,0.2) 25%

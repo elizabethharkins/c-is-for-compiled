@@ -34,10 +34,13 @@ const NavStyles = styled.div`
 		margin-bottom: 0.25em;
 	}
 	.nav-item {
+		border: 1px solid transparent;
 		text-align: center;
 		transition: all .6s ease;
 		&:hover { 
-			background: var(--nav-gradient-muted); 
+			background: var(--nav-gradient); 
+			border: 1px solid var(--light-pastel-purple);
+			border-radius: 0.125em;
 			text-decoration: underline;
 			box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
 		}
@@ -45,6 +48,9 @@ const NavStyles = styled.div`
 	.nav-link {
 		padding-right: .8rem;
     	padding-left: .8rem;
+	}
+	.nav-link.active {
+		color: var(--light-accent-blue) !important;
 	}
 	
 `;
