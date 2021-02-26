@@ -94,6 +94,9 @@ const HeaderStyles = styled.div`
 			font-size: 5.5em;
 		}
 
+		.supplementary {
+			width: 66%;
+		}
 		h2 {
 			font-size: 3.4em;
 		}
@@ -108,6 +111,9 @@ const HeaderStyles = styled.div`
 			justify-content: flex-start;
 			flex-flow: column wrap;
 			padding: 12px 0 12px 0;
+		}
+		.supplementary {
+			width: 100%;
 		}
 
 		.tag  {
@@ -128,6 +134,10 @@ const HeaderStyles = styled.div`
 
 		.subheading {
 			padding: 12px 0 12px 0;
+			width: 100%;
+		}
+		.supplementary {
+			padding-left: unset;
 		}
 
 		.tag {
@@ -149,6 +159,7 @@ const HeaderStyles = styled.div`
 
 		.subheading {
 			padding: 12px 0 12px 0;
+			width: 100%;
 		}
 		
 		.tag {

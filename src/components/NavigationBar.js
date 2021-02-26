@@ -41,7 +41,6 @@ const NavStyles = styled.div`
 			background: var(--nav-gradient); 
 			border: 1px solid var(--light-pastel-purple);
 			border-radius: 0.125em;
-			text-decoration: underline;
 			box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
 		}
 	}
