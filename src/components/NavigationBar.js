@@ -58,7 +58,7 @@ const NavStyles = styled.div`
 export const NavigationBar = () => {
 
 	let styles = {
-		color: "var(--light-pastel-purple)",
+		color: "#ff00ff",
 		fontFamily: "'Barriecito', cursive",
 	}
 
