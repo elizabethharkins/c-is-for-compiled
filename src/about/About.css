@@ -13,25 +13,7 @@
 	margin: 5% auto auto;
 }
 
-/* images */
-.drawing {
-	background-image: url(./img/mebygv.png);
-	background-position: bottom;
-	background-repeat: no-repeat;
-	background-size: 125%;
-	grid-row: 2 / 4;
-	grid-column: 1;
-	margin: 0;
-	padding: 0;
-	z-index: 2;
-}
 
-/* @media */
-@media only screen and (min-width: 240px) and (max-width: 479px) {
-	.drawing {
-		background-size: 125%;
-	}
-}
 
 @media only screen and (max-width: 73em) {
 	.magazine {
@@ -41,16 +23,5 @@
 		width: 95vw;
 	}
 	
-	.drawing {		
-		background-image: url(img/mebygv.png);
-		background-position: auto;
-		background-repeat: no-repeat;
-		background-size: contain;
-		grid-row: 5;
-		grid-column: 1;
-		margin: 0;
-		padding: 0;
-		margin-top: -10em;
-		z-index: 2;
-	}
+	
 }

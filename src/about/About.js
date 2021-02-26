@@ -6,6 +6,7 @@ import { Primary } from "./components/Primary";
 import { Supplementary } from "./components/Supplementary";
 import { Quote } from "./components/Quote";
 import { Synthwave } from "./components/Synthwave";
+import { Drawing } from "./components/Drawing";
 import { Invite } from "./components/Invite";
 import "./About.css";
 
@@ -19,7 +20,7 @@ export const About = () => {
 			<Supplementary />
 			<Quote />
 			<Synthwave />
-			<div className="drawing"></div>
+			<Drawing />
 			<Invite />
 		</div>
 	);
