@@ -21,10 +21,12 @@ const ZineStyles = styled.div`
 	margin: 5% auto auto;
 
 	@media only screen and (max-width: 73em) {
+		max-width: unset;
 		grid-template-rows: 120px 4fr 3fr 3fr 2fr 0.5fr;/*130px 2fr 1fr*/
-		grid-template-columns: 95vw; /*1.5fr 1fr 1fr 1.5fr*/
+		grid-template-columns: 99vw; /*1.5fr 1fr 1fr 1.5fr*/
 		height: 1800px;
-		width: 95vw;
+		width: 99vw;
+		margin: 3em auto;
 	}
 `;
 

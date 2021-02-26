@@ -15,6 +15,7 @@ const SynthwaveStyles = styled.div`
 
 	@media (max-width: 73em) {
 		background-size: auto;
+		background-position: top center;
 		grid-row: 2;
 		grid-column: 1;
 		margin: 0;

@@ -24,7 +24,7 @@ const TitleStyles = styled.div`
 	z-index: 3;
 
 	@media only screen and (max-width: 73em) {
-		font-size: calc(10px + 3.6vw);
+		font-size: calc(10px + 2vw);
 		grid-row: 1;
 
 		align-items: center;

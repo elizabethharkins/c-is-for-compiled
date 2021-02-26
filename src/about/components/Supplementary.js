@@ -39,9 +39,9 @@ const SupplementaryStyles = styled.div`
 		background-image: radial-gradient(at top right #00ff00, gray);
 		text-align: left;
 		z-index: 2;
-		-ms-transform: rotate(3deg); /* IE 9 */
-		-webkit-transform: rotate(3deg); /* Safari 3-8 */
-		transform: rotate(3deg);
+		-ms-transform: rotate(0deg); /* IE 9 */
+		-webkit-transform: rotate(0deg); /* Safari 3-8 */
+		transform: rotate(0deg);
 
 		p {
 			padding: 2%;
