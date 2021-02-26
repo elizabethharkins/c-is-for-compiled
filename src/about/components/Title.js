@@ -12,18 +12,25 @@ const TitleStyles = styled.div`
 	display: grid;
 	font-family: 'Barriecito', cursive;
 	font-weight: normal;
-	font-size: calc(10px + 2.6vw);
+	font-size: calc(10px + 1.5vw);
 	grid-row: 1;
-	grid-column: 1 / 3;
+	grid-column: 1 / 4;
 	justify-content: end;
 	padding-bottom: 20px;
 	padding-right: 40px;
+	padding-top: 1%;
+	padding-left: 1%;
 	text-transform: uppercase;
 	z-index: 3;
 
 	@media only screen and (max-width: 73em) {
 		font-size: calc(10px + 3.6vw);
 		grid-row: 1;
+
+		align-items: center;
+    	justify-content: center;
+    	padding: 2%;
+    	text-align: center;
 	}
 `;
 
@@ -32,7 +39,7 @@ export const Title = () => {
 
 	return (
 		<TitleStyles>
-			<Typewriter inputStrings={["Welcome"]} />
+			<Typewriter inputStrings={["Welcome, You've Got M- ... An About Page"]} />
 		</TitleStyles>
 	);
 	

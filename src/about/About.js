@@ -15,7 +15,7 @@ const ZineStyles = styled.div`
 	grid-template-rows: 130px 2fr 1fr;
 	grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
 	height: 800px;
-	max-width: 80em;
+	max-width: 85em;
 	outline: 6px solid #121219;
 	width: 95vw;
 	margin: 5% auto auto;

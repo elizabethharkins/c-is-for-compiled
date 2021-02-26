@@ -23,6 +23,7 @@ const PrimaryStyles = styled.div`
 		background: #fff;
 		color: var(--dark-grey);
 		padding: 0.5%;
+		width: fit-content;
 	}
 
 	p {

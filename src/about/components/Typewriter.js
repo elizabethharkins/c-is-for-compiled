@@ -36,7 +36,7 @@ export default class Typewriter extends React.Component {
 	}
 
 	stringChecker(string, words) {
-		if (string === "Welcome") {
+		if (string === "Welcome, You've Got M- ... An About Page") {
 			this.setState({ typeColor: { color: "var(--grey)" } });
 		}
 		else {
