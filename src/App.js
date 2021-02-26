@@ -2,7 +2,7 @@
 
 import React from "react";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import { NavigationBar } from "./components/NavigationBar";
 import { Home } from "./components/Home";
 import { About } from "./about/About";
@@ -14,7 +14,7 @@ export const App = () => {
 
 	return (
 		<React.Fragment>
-			<Router>
+			<Router basename="/c-is-for-compiled">
 				<NavigationBar />
 
 				<Switch>

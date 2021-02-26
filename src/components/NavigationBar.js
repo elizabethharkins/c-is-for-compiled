@@ -65,7 +65,7 @@ export const NavigationBar = () => {
 	return (
 		<NavStyles>
 			<Navbar expand="lg">
-				<Navbar.Brand href="/">L<span style={ styles }>;</span>z Harkins</Navbar.Brand>
+				<Navbar.Brand href="https://elizabethharkins.github.io/c-is-for-compiled/#/">L<span style={ styles }>;</span>z Harkins</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Nav className="ml-auto">
@@ -73,8 +73,8 @@ export const NavigationBar = () => {
 						<Nav.Item><Nav.Link href="https://www.linkedin.com/in/emharkins/" target="_blank">in</Nav.Link></Nav.Item>
 						<Nav.Item><Nav.Link href="https://twitter.com/_lizzith" target="_blank">chirp</Nav.Link></Nav.Item>
 						<Nav.Item><Nav.Link href="https://github.com/elizabethharkins" target="_blank">hub</Nav.Link></Nav.Item>
-						<Nav.Item><Nav.Link href="/about">About</Nav.Link></Nav.Item>
-						<Nav.Item><Nav.Link href="/thecollection">The Collection</Nav.Link></Nav.Item>
+						<Nav.Item><Nav.Link href="https://elizabethharkins.github.io/c-is-for-compiled/#/about">About</Nav.Link></Nav.Item>
+						<Nav.Item><Nav.Link href="https://elizabethharkins.github.io/c-is-for-compiled/#/thecollection">The Collection</Nav.Link></Nav.Item>
 					</Nav>
 				</Navbar.Collapse>
 			</Navbar>
