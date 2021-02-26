@@ -10,7 +10,6 @@ const SynthwaveStyles = styled.div`
 	background-size: cover;
 	grid-row: 1 / 3;
 	grid-column: 2 / 5;
-	margin: 0 0 20px 20px;
 	z-index: 2;
 
 	@media (max-width: 73em) {
@@ -19,6 +18,7 @@ const SynthwaveStyles = styled.div`
 		grid-row: 2;
 		grid-column: 1;
 		margin: 0;
+		outline: 6px solid #121219;
 	}
 `;
 

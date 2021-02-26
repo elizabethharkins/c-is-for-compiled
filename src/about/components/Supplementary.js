@@ -4,6 +4,7 @@ import React from "react";
 import styled from "styled-components";
 const SupplementaryStyles = styled.div`
 	align-items: center;
+	border-top: 6px solid #121219;
 	border-radius: 0.125em;
 	box-shadow: var(--content-box-shadow);
 	display: grid;
@@ -13,9 +14,6 @@ const SupplementaryStyles = styled.div`
 	grid-column-gap: 30px;
 	text-align: right;
 	z-index: 2;
-	-ms-transform: rotate(1deg); /* IE 9 */
-	-webkit-transform: rotate(1deg); /* Safari 3-8 */
-	transform: rotate(1deg);
 
 	background-color: #a9a9a9;
 	border-radius: 0.125em;
@@ -31,14 +29,17 @@ const SupplementaryStyles = styled.div`
 	}
 
 	@media (max-width: 73em) {
+		box-shadow: 0 5px 50px -5px orange;
+    	border: 1px solid var(--blue-magenta);
+    	margin: 0 1%;
+		outline: 6px solid #121219;
 		grid-row: 4;
 		grid-column: 1;
 		padding-top: 50px;
-		box-shadow: var(--content-box-shadow);
 		display: block;
 		background-image: radial-gradient(at top right #00ff00, gray);
 		text-align: left;
-		z-index: 2;
+		z-index: 4;
 		-ms-transform: rotate(0deg); /* IE 9 */
 		-webkit-transform: rotate(0deg); /* Safari 3-8 */
 		transform: rotate(0deg);

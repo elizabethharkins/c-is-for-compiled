@@ -3,6 +3,7 @@
 import React from "react";
 import styled from "styled-components";
 const PrimaryStyles = styled.div`
+	border-right: 6px solid #121219;
 	border-radius: 0.125em;
 	box-shadow: var(--content-box-shadow);
 	display: block;
@@ -10,9 +11,6 @@ const PrimaryStyles = styled.div`
 	grid-column: 1 / 2;
 	text-align: left;
 	z-index: 2;
-	-ms-transform: rotate(-1deg); /* IE 9 */
-	-webkit-transform: rotate(-1deg); /* Safari 3-8 */
-	transform: rotate(-1deg);
 
 	background-color: #a9a9a9;
 	font-family: 'Roboto Mono', monospace;
@@ -22,7 +20,9 @@ const PrimaryStyles = styled.div`
 	h1 {
 		background: #fff;
 		color: var(--dark-grey);
+		margin-bottom: 1rem;
 		padding: 0.5%;
+		transform: rotate(-1deg);
 		width: fit-content;
 	}
 
@@ -34,9 +34,14 @@ const PrimaryStyles = styled.div`
 	}
 
 	@media (max-width: 73em) {
+		box-shadow: 0 5px 50px -5px orange;
+    	border: 1px solid var(--blue-magenta);
+    	margin: 2% 1%;
+		outline: 6px solid #121219;
 		grid-row: 3;
 		grid-column: 1;
 		padding-top: 50px;
+		z-index: 3;
 
 		h1 {
 			margin-bottom: 1em;

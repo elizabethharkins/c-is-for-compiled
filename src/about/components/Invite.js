@@ -46,6 +46,8 @@ const InviteStyles = styled.div`
 		padding-right: 25px;
 		padding-top: 3%;
 
+		border-top: 1px solid var(--dark-grey);
+		border-left: 1px solid var(--dark-grey);
 		display: flex;
 		align-items: flex-end;
 		justify-content: flex-end;
@@ -54,12 +56,12 @@ const InviteStyles = styled.div`
 		font-weight: bold;
 		grid-column: 1;
 		grid-row: 6;
-		height: 66%;
+		height: auto;
 		margin: 0 auto;
 		text-align: right;
 		text-transform: uppercase;
 		width: 70%;
-		z-index: 3;
+		z-index: 4;
 	}
 `;
 

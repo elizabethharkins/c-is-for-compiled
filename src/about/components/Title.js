@@ -23,7 +23,10 @@ const TitleStyles = styled.div`
 	text-transform: uppercase;
 	z-index: 3;
 
-	@media only screen and (max-width: 73em) {
+	@media (max-width: 73em) {
+		border: 1px solid var(--light-grey);
+		outline: 6px solid #121219;
+
 		font-size: calc(10px + 2vw);
 		grid-row: 1;
 

@@ -7,6 +7,7 @@ import { NavigationBar } from "./components/NavigationBar";
 import { Home } from "./Home";
 import { About } from "./about/About";
 import { TheCollection } from "./thecollection/TheCollection";
+import { Footer } from "./components/Footer";
 
 
 export const App = () => {
@@ -21,6 +22,8 @@ export const App = () => {
 					<Route path="/about" component={ About } />
 					<Route path="/thecollection" component={ TheCollection } />
 				</Switch>
+
+				<Footer />
 			</Router>
 		</React.Fragment>
 	);

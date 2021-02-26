@@ -14,19 +14,21 @@ const ZineStyles = styled.div`
 	display: grid;
 	grid-template-rows: 130px 2fr 1fr;
 	grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
-	height: 800px;
+	height: 52em;
 	max-width: 85em;
 	outline: 6px solid #121219;
 	width: 95vw;
-	margin: 5% auto auto;
+	margin: 5% auto;
 
 	@media only screen and (max-width: 73em) {
 		max-width: unset;
-		grid-template-rows: 120px 4fr 3fr 3fr 2fr 0.5fr;/*130px 2fr 1fr*/
+		grid-template-rows: 120px 4fr 3fr 3fr 1fr 0.5fr;/*130px 2fr 1fr*/
+		grid-template-rows: .5fr 2fr 1.25fr 1.25fr;
 		grid-template-columns: 99vw; /*1.5fr 1fr 1fr 1.5fr*/
 		height: 1800px;
 		width: 99vw;
-		margin: 3em auto;
+		margin: 3em auto 0 auto;
+		outline: none;
 	}
 `;
 

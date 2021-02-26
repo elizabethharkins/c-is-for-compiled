@@ -30,7 +30,7 @@ const WeatherStyles = styled.div`
 		padding: 0;
 	}
 	.weather-body > .row > .col {
-		padding: 1%;
+		padding: 0.33em;
 	}
 
 	.fineprint {

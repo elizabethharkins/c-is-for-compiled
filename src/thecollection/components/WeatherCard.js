@@ -7,7 +7,6 @@ const CardStyles = styled.div`
 	.card {
 		background: transparent;
 		border-bottom: 5px solid rgba(0,0,0,.125);
-    	border-right: 5px solid rgba(0,0,0,.125);
 		color: #eaedf0;
 		max-height: 352px;
     	min-height: 281px;

@@ -17,10 +17,10 @@ const NewsWrapper = styled.div`
 	box-shadow:var(--collection-cw-box-shadow);
 
 	@media (min-width: 85em) {
-		margin: 5% auto 0;
+		margin: 5% auto;
 	}
 	@media (max-width: 85em) {
-		margin: 5% auto 0;
+		margin: 5% auto;
 	}
 `;
 
