@@ -36,8 +36,8 @@ export const StoryData = [
         subheading: "React, CSS Grid",
         description: "A portfolio enters the modern age!",
         descriptionExt: "I spruced up an existing portfolio, found at my grid-folio repo, into the version you are now visiting. I refactored the JavaScript into React, and reduced the CSS, weaving previous designs into complementary, styled components.", 
-        live: "https://github.com/elizabethharkins/cover-story", 
-        github: "https://github.com/elizabethharkins/cover-story",
+        live: "https://elizabethharkins.github.io/c-is-for-compiled/#/", 
+        github: "https://elizabethharkins.github.io/c-is-for-compiled",
         list: [ "React", "React Hooks", "React Router", "HTML5", "CSS3", "SCSS", "Vanilla JavaScript", "ES6", "ES6 Modules", "Styled Components" ],
     },
     {
