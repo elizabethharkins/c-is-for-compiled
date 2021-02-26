@@ -19,6 +19,7 @@ const ZineStyles = styled.div`
 	outline: 6px solid #121219;
 	width: 95vw;
 	margin: 5% auto;
+	margin-bottom: 8%;
 
 	@media only screen and (max-width: 73em) {
 		max-width: unset;
