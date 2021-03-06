@@ -2,6 +2,7 @@
 
 import React from "react";
 import styled from "styled-components";
+import { device } from "../device";
 const SupplementaryStyles = styled.div`
 	align-items: center;
 	border-top: 6px solid #121219;
@@ -28,7 +29,7 @@ const SupplementaryStyles = styled.div`
 		transform: rotate(-2deg);
 	}
 
-	@media (max-width: 73em) {
+	@media ${device.laptopML} {
 		box-shadow: 0 5px 50px -5px orange;
     	border: 1px solid var(--blue-magenta);
     	margin: 0 1%;

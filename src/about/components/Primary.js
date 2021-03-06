@@ -2,6 +2,7 @@
 
 import React from "react";
 import styled from "styled-components";
+import { device } from "../device";
 const PrimaryStyles = styled.div`
 	border-right: 6px solid #121219;
 	border-radius: 0.125em;
@@ -33,7 +34,7 @@ const PrimaryStyles = styled.div`
 		padding: 0.5%;
 	}
 
-	@media (max-width: 73em) {
+	@media ${device.laptopML} {
 		box-shadow: 0 5px 50px -5px orange;
     	border: 1px solid var(--blue-magenta);
     	margin: 2% 1%;

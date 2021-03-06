@@ -2,6 +2,7 @@
 
 import React from "react";
 import styled from "styled-components";
+import { device } from "../device";
 const InviteStyles = styled.div`
 	background: var(--grey);
 	border-bottom: 1px solid var(--dark-grey);
@@ -41,7 +42,7 @@ const InviteStyles = styled.div`
 		}
 	}
 
-	@media (max-width: 73em) {
+	@media ${device.laptopML} {
 		padding-bottom: 0.125%;
 		padding-right: 25px;
 		padding-top: 3%;

@@ -3,6 +3,7 @@
 import React from "react";
 import synthwave from '../img/synthwave.jpg';
 import styled from "styled-components";
+import { device } from "../device";
 const SynthwaveStyles = styled.div`
 	background-image: url(${synthwave});
 	background-position: left center;
@@ -12,7 +13,7 @@ const SynthwaveStyles = styled.div`
 	grid-column: 2 / 5;
 	z-index: 2;
 
-	@media (max-width: 73em) {
+	@media ${device.laptopML} {
 		background-size: auto;
 		background-position: top center;
 		grid-row: 2;

@@ -3,6 +3,7 @@
 import React from "react";
 import Typewriter from "./Typewriter";
 import styled from "styled-components";
+import { device } from "../device";
 const TitleStyles = styled.div`
 	align-items: end;
 	background: var(--dark-accent-grey);
@@ -23,7 +24,7 @@ const TitleStyles = styled.div`
 	text-transform: uppercase;
 	z-index: 3;
 
-	@media (max-width: 73em) {
+	@media ${device.laptopML} {
 		border: 1px solid var(--light-grey);
 		outline: 6px solid #121219;
 

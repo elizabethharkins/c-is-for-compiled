@@ -10,7 +10,7 @@
 // Laptop S - 64em, 1024px
 // Laptop M - 68.750em, 1100px
 // Laptop M+ - 70em, 1120px
-// Lapton Min - 73em, 1168px
+// Laptop ML - 73em, 1168px
 // Laptop Standard - 75em, 1200px
 // Laptop L - 81.250em, 1300px
 // Desktop - 85em, 1360px
@@ -43,7 +43,7 @@ const size = {
 	laptopS: "1024px",
 	laptopM: "1100px",
 	laptopMP: "1120px",
-	laptopMin: "1168px",
+	laptopML: "1168px",
 	laptop: "1200px",
 	desktop: "1300px",
 	desktopL: "1360px"
@@ -60,7 +60,7 @@ export const device = {
 	laptopS: `(max-width: ${size.laptopS})`,
 	laptopM: `(max-width: ${size.laptopM})`,
 	laptopMP: `(max-width: ${size.laptopMP})`,
-	laptopMin: `(max-width: ${size.laptopMin})`,
+	laptopML: `(max-width: ${size.laptopML})`,
 	laptop: `(max-width: ${size.laptop})`,
 	desktop: `(max-width: ${size.desktop})`,
 	desktopL: `(max-width: ${size.desktopL})`,

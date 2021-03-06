@@ -3,6 +3,7 @@
 import React from "react";
 import drawing from '../img/mebygv.png';
 import styled from "styled-components";
+import { device } from "../device";
 const DrawingStyles = styled.div`
 	background-image: url(${drawing});
 	background-position: bottom;
@@ -16,7 +17,7 @@ const DrawingStyles = styled.div`
 	padding: 0;
 	z-index: 2;
 
-	@media (max-width: 73em) {	
+	@media ${device.laptopML} {	
 		background-position: auto;
 		background-repeat: no-repeat;
 		background-size: contain;
@@ -33,7 +34,7 @@ const DrawingStyles = styled.div`
     	margin: 0 auto;
     	margin-top: 11em;
 	}
-	@media (max-width: 30em) {
+	@media ${device.mobileM} {
 		background-size: 125%;
 	}
 `;

@@ -9,6 +9,7 @@ import { Synthwave } from "./components/Synthwave";
 import { Drawing } from "./components/Drawing";
 import { Invite } from "./components/Invite";
 import styled from "styled-components";
+import { device } from "../device";
 const ZineStyles = styled.div`
 	background: #e5e5e5;
 	display: grid;
@@ -21,7 +22,7 @@ const ZineStyles = styled.div`
 	margin: 5% auto;
 	margin-bottom: 8%;
 
-	@media only screen and (max-width: 73em) {
+	@media ${device.laptopML} {
 		max-width: unset;
 		grid-template-rows: 120px 4fr 3fr 3fr 1fr 0.5fr;/*130px 2fr 1fr*/
 		grid-template-rows: .5fr 2fr 1.25fr 1.25fr;

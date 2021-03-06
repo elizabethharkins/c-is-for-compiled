@@ -3,6 +3,7 @@
 import React from "react";
 import Typewriter from "./Typewriter";
 import styled from "styled-components";
+import { device } from "../device";
 const QuoteStyles = styled.div`
 	align-self: end;
 	background: rgba(0,0,0,0.5);
@@ -20,7 +21,7 @@ const QuoteStyles = styled.div`
 	text-transform: uppercase;
 	z-index: 3;
 	
-	@media only screen and (max-width: 73em) {
+	@media ${device.laptopML} {
 		bottom: 11%;
 		font-size: calc(12px + 2.3vw);
 		grid-row: 2;
@@ -28,7 +29,7 @@ const QuoteStyles = styled.div`
 		left: 75px;
 		width: 66%;
 	}
-	@media (max-width: 30em) {
+	@media ${device.mobileM} {
 		left: 50px;
 	}
 `;
