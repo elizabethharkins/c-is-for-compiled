@@ -2,7 +2,7 @@
 
 import React from "react";
 import styled from "styled-components";
-import { device } from "../device";
+import { device } from "../../device";
 const SupplementaryStyles = styled.div`
 	align-items: center;
 	border-top: 6px solid #121219;

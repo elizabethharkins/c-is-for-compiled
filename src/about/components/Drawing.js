@@ -3,7 +3,7 @@
 import React from "react";
 import drawing from '../img/mebygv.png';
 import styled from "styled-components";
-import { device } from "../device";
+import { device } from "../../device";
 const DrawingStyles = styled.div`
 	background-image: url(${drawing});
 	background-position: bottom;

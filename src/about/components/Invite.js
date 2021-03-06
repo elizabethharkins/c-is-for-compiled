@@ -2,7 +2,7 @@
 
 import React from "react";
 import styled from "styled-components";
-import { device } from "../device";
+import { device } from "../../device";
 const InviteStyles = styled.div`
 	background: var(--grey);
 	border-bottom: 1px solid var(--dark-grey);

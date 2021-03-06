@@ -3,7 +3,7 @@
 import React from "react";
 import synthwave from '../img/synthwave.jpg';
 import styled from "styled-components";
-import { device } from "../device";
+import { device } from "../../device";
 const SynthwaveStyles = styled.div`
 	background-image: url(${synthwave});
 	background-position: left center;

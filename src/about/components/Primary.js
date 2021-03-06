@@ -2,7 +2,7 @@
 
 import React from "react";
 import styled from "styled-components";
-import { device } from "../device";
+import { device } from "../../device";
 const PrimaryStyles = styled.div`
 	border-right: 6px solid #121219;
 	border-radius: 0.125em;

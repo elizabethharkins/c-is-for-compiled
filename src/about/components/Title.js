@@ -3,7 +3,7 @@
 import React from "react";
 import Typewriter from "./Typewriter";
 import styled from "styled-components";
-import { device } from "../device";
+import { device } from "../../device";
 const TitleStyles = styled.div`
 	align-items: end;
 	background: var(--dark-accent-grey);
