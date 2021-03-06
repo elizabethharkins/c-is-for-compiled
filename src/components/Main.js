@@ -2,6 +2,7 @@
 
 import React from "react";
 import styled from "styled-components";
+import { device } from "./device";
 const MainPageStyles = styled.div`
 .fill-area  {
 	bottom: -72px;
@@ -101,7 +102,7 @@ label::after {
 	transition: box-shadow .3s ease-in-out;
 }
 
-@media (max-width: 52em) {
+@media ${device.tabletMP} {
 	.content {
 		height: 100px;
 		width: 85%;
@@ -116,7 +117,7 @@ label::after {
 	}
 }
 
-@media (max-width: 33.250em) {
+@media ${device.mobileL} {
 	.content {
 		margin: 1em auto 0 auto;
 	}
