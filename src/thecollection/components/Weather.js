@@ -5,6 +5,7 @@ import CitySelector from "./CitySelector";
 import UseFetch from "../hooks/UseFetch";
 import WeatherList from "./WeatherList";
 import styled from "styled-components";
+import { device } from "../../device";
 const WeatherStyles = styled.div`
 	border-bottom: 10px solid var(--charcoal-grey);
 	margin: 0 2% 0 2%;
@@ -37,19 +38,19 @@ const WeatherStyles = styled.div`
 		padding: 2px;
 	}
 
-	@media (max-width: 70em) {
+	@media ${device.laptopMP} {
 		.weather-body > .row > .col {
 			flex-basis: unset;
     		flex-grow: unset;
     		max-width: 25%;
 		}
 	}
-	@media (max-width: 37.5em) {
+	@media ${device.tabletS} {
 		.weather-body > .row > .col {
 			max-width: 50%;
 		}
 	}	
-	@media (max-width: 30em) {
+	@media ${device.mobileM} {
 		.weather-header h1 {
 			font-size: 2em;
 		}

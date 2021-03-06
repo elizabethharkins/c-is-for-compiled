@@ -2,6 +2,7 @@
 
 import React from "react";
 import styled from "styled-components";
+import { device } from "../../device";
 const Footer = styled.footer`
 	.citation {
 		font-family: 'Playfair Display', serif;
@@ -32,17 +33,17 @@ const Footer = styled.footer`
 		margin: 1% auto;
 	}
 
-	@media (max-width: 64em) {
+	@media ${device.laptopS} {
 	   .citation {
 			font-size: 1.875em;
 		}
 	}
-	@media (max-width: 50em) {
+	@media ${device.tabletM} {
 	   .citation {
 			max-width: unset;
 		}
 	}
-	@media (max-width: 30em) {
+	@media ${device.mobileM} {
 	   .citation {
 			font-size: 1.525em;
 		}

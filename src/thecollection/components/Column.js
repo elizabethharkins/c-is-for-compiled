@@ -2,6 +2,7 @@
 
 import React from "react";
 import styled from "styled-components";
+import { device } from "../../device";
 const ColumnStyles = styled.div`
 	font-size: 14px;
 	line-height: 20px;
@@ -101,13 +102,13 @@ const ColumnStyles = styled.div`
    		list-style-type: none; 
 	}
 
-	@media (max-width: 1200px) {
+	@media ${device.laptop} {
 		width: 33%;
 	}
-	@media (max-width: 900px) {
+	@media ${device.tabletL} {
 		width: 50%;
 	}
-	@media (max-width: 600px) {
+	@media ${device.tabletS} {
 		width: 100%;
 		border-bottom: var(--standard-column-border);
 		border-left: none;

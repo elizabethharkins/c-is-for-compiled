@@ -12,8 +12,8 @@
 // Laptop M+ - 70em, 1120px
 // Laptop ML - 73em, 1168px
 // Laptop Standard - 75em, 1200px
-// Laptop L - 81.250em, 1300px
-// Desktop - 85em, 1360px
+// Desktop - 81.250em, 1300px
+// Desktop L - 85em, 1360px
 
 
 // 15em, 240px
@@ -37,9 +37,11 @@ const size = {
 	mobileM: "480px",
 	mobileL: "532px",
 	tabletS: "600px",
+	tabletS_Min: "600px",
 	tabletM: "800px",
 	tabletMP: "832px",
 	tabletL: "900px",
+	tabletL_Min: "900px",
 	laptopS: "1024px",
 	laptopM: "1100px",
 	laptopMP: "1120px",
@@ -54,9 +56,11 @@ export const device = {
 	mobileM: `(max-width: ${size.mobileM})`,
 	mobileL: `(max-width: ${size.mobileL})`,
 	tabletS: `(max-width: ${size.tabletS})`,
+	tabletS_Min: `(min-width: ${size.tabletS})`,
 	tabletM: `(max-width: ${size.tabletM})`,
 	tabletMP: `(max-width: ${size.tabletMP})`,
 	tabletL: `(max-width: ${size.tabletL})`,
+	tabletL_Min: `(min-width: ${size.tabletL})`,
 	laptopS: `(max-width: ${size.laptopS})`,
 	laptopM: `(max-width: ${size.laptopM})`,
 	laptopMP: `(max-width: ${size.laptopMP})`,

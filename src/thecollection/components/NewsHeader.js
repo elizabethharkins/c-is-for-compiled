@@ -3,6 +3,7 @@
 import React from "react";
 import DateDisplay from "./DateDisplay";
 import styled from "styled-components";
+import { device } from "../../device";
 const HeaderStyles = styled.div`
 	display: flex;
 	justify-content: center;
@@ -75,7 +76,7 @@ const HeaderStyles = styled.div`
 		width: 100%;
 	}
 
-	@media (max-width: 81.250em) {
+	@media ${device.desktop} {
 		h1	{
 			font-size: 7em;
 		}
@@ -89,7 +90,7 @@ const HeaderStyles = styled.div`
 			font-size: 3.3em;
 		}
 	}
-	@media (min-width: 56.250em) and (max-width: 68.750em) {
+	@media ${device.tabletL_Min} and ${device.laptopM} {
 		h1	{
 			font-size: 5.5em;
 		}
@@ -101,7 +102,7 @@ const HeaderStyles = styled.div`
 			font-size: 3.4em;
 		}
 	}
-	@media (min-width: 37.5em) and (max-width: 64em) {
+	@media ${device.tabletS_Min} and ${device.laptopS} {
 		h1	{
 			font-size: 3.9em;
 			margin-bottom: 10px;
@@ -125,7 +126,7 @@ const HeaderStyles = styled.div`
 			font-size: 2.8em;
 		}
 	}
-	@media (max-width: 37.5em) {
+	@media ${device.tabletS} {
 		h1	{
 			font-size: 3.9em;
 			margin-bottom: 10px;
@@ -149,7 +150,7 @@ const HeaderStyles = styled.div`
 			font-size: 2.5em;
 		}
 	}
-	@media (max-width: 30em) {
+	@media ${device.mobileM} {
 		h1	{
 			font-size: 2em;
 			line-height: 42px;

@@ -3,6 +3,7 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import styled from "styled-components";
+import { device } from "../../device";
 const CardStyles = styled.div`
 	.card {
 		background: transparent;
@@ -16,7 +17,7 @@ const CardStyles = styled.div`
 		margin-bottom: 0.125rem;
 	}
 
-	@media (max-width: 30em) {
+	@media ${device.mobileM} {
 		.card {
 			border-bottom: unset
 	    	border-right: unset
