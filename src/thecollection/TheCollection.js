@@ -13,12 +13,9 @@ const NewsWrapper = styled.div`
 	font-family: 'Droid Serif', serif;
 	font-size: 16px;
 	max-width: 80em;
+	margin: 5% auto;
 	display: grid;
 	box-shadow:var(--collection-cw-box-shadow);
-
-	@media (min-width: 85em) {
-		margin: 5% auto;
-	}
 `;
 
 
