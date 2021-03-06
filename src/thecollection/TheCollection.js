@@ -19,9 +19,6 @@ const NewsWrapper = styled.div`
 	@media (min-width: 85em) {
 		margin: 5% auto;
 	}
-	@media (max-width: 85em) {
-		margin: 5% auto;
-	}
 `;
 
 
