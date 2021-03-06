@@ -20,9 +20,6 @@ const QuoteStyles = styled.div`
 	text-transform: uppercase;
 	z-index: 3;
 	
-	@media only screen and (min-width: 240px) and (max-width: 479px) {
-		left: 50px;
-	}
 	@media only screen and (max-width: 73em) {
 		bottom: 11%;
 		font-size: calc(12px + 2.3vw);
@@ -30,6 +27,9 @@ const QuoteStyles = styled.div`
 		grid-column: 1;
 		left: 75px;
 		width: 66%;
+	}
+	@media (max-width: 30em) {
+		left: 50px;
 	}
 `;
 

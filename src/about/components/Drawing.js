@@ -33,7 +33,7 @@ const DrawingStyles = styled.div`
     	margin: 0 auto;
     	margin-top: 11em;
 	}
-	@media (max-width: 480px) {
+	@media (max-width: 30em) {
 		background-size: 125%;
 	}
 `;

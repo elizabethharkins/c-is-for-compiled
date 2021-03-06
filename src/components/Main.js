@@ -101,7 +101,7 @@ label::after {
 	transition: box-shadow .3s ease-in-out;
 }
 
-@media screen and (max-width: 52em) {
+@media (max-width: 52em) {
 	.content {
 		height: 100px;
 		width: 85%;
@@ -116,7 +116,7 @@ label::after {
 	}
 }
 
-@media screen and (max-width: 33.250em) {
+@media (max-width: 33.250em) {
 	.content {
 		margin: 1em auto 0 auto;
 	}
