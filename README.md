@@ -1,12 +1,14 @@
 
 
 Project Overview
-----------------
+================
 
-I spruced up an existing portfolio, found at my grid-folio repo, into the version you are now visiting. 
+I spruced up an existing portfolio, found at my [grid-folio repo](https://github.com/elizabethharkins/grid-folio), into this version. 
 
-I refactored the JavaScript into React, and reduced the CSS, weaving previous designs into complementary, styled components.
+I refactored the JavaScript into `React`, began incorporating `React Hooks`, and reduced the CSS, weaving previous designs into complementary, `styled components`.
 
+&nbsp;
+&nbsp;
 
 # Getting Started with Create React App
 
