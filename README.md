@@ -1,3 +1,13 @@
+
+
+Project Overview
+----------------
+
+I spruced up an existing portfolio, found at my grid-folio repo, into the version you are now visiting. 
+
+I refactored the JavaScript into React, and reduced the CSS, weaving previous designs into complementary, styled components.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
