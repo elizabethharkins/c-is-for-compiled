@@ -9,6 +9,8 @@ I refactored the JavaScript into `React`, began incorporating `React Hooks`, and
 
 &nbsp;
 &nbsp;
+&nbsp;
+&nbsp;
 
 # Getting Started with Create React App
 
